@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="53f8ccef-742a-4009-a73d-f092af37811c">
+  <producedTypes>
+    <objectType typeId="fc701069-2906-4f2b-b339-b59611ef6032" valueTypeId="48683e87-65d8-495a-b7a2-4c8252234cbe"/>
+    <managerType typeId="be3ef385-b142-46c1-abc8-5a432fa1c964" valueTypeId="e9e1ad4d-0045-4020-b087-418ce44f3c43"/>
+  </producedTypes>
+  <name>ПомощникПроверкиПериодовВС</name>
+  <synonym>
+    <key>ru</key>
+    <value>Помощник корректировки периодов военного сбора (для отпускных)</value>
+  </synonym>
+  <synonym>
+    <key>uk</key>
+    <value>Помічник коригування періодів військового збору (для відпускних)</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.ПомощникПроверкиПериодовВС.Form.Форма</defaultForm>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+    <pages>
+      <lang>uk</lang>
+    </pages>
+  </help>
+  <attributes uuid="8bf13275-5822-461e-a4a9-fa24600db65d">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Організація</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+  </attributes>
+  <attributes uuid="b9b58e57-f2a4-4952-a18a-983245729118">
+    <name>Период</name>
+    <synonym>
+      <key>ru</key>
+      <value>Месяц корректировки</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Місяць коригування</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="c373d8d4-22a4-4310-83cd-57263e533009">
+    <name>Ответственный</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ответственный</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Відповідальний</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Пользователи</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <forms uuid="ebf792ec-bfed-45f3-8aa1-2c37d6f61a94">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DataProcessor>

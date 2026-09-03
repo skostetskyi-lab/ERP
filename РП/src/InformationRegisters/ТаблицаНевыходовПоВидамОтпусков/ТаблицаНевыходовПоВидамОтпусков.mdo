@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="6f2b5433-e03e-4058-8f90-6a443e560378">
+  <producedTypes>
+    <selectionType typeId="3c97a980-2164-468f-b678-3056db8c2d5d" valueTypeId="6c127dfc-3f57-4729-929a-062e6d02191f"/>
+    <listType typeId="7a932b39-2ed2-4c95-a672-4d94c4f60d03" valueTypeId="75be76d5-9d2c-4136-912c-cf8ab7ce4128"/>
+    <managerType typeId="0f39a99a-ff23-46c1-86e2-a9a26fff2cf9" valueTypeId="eacdc56c-5093-475c-8a85-f16b929038ed"/>
+    <recordSetType typeId="cab1d709-7546-484d-8705-3ab27441695d" valueTypeId="a2ad01c4-3ccd-4d6d-931e-6e986b60dcdd"/>
+    <recordKeyType typeId="42dcea3d-4375-475a-808e-039d683dbc9a" valueTypeId="80c92fa1-49b7-4f51-bc48-6f17889b59ff"/>
+    <recordType typeId="50dbc713-ea12-4f48-b86d-6357912d1ec3" valueTypeId="13b210aa-b128-4197-9c3a-3413e74c042c"/>
+    <recordManagerType typeId="2ec95286-2149-4307-92d1-554f4853a79e" valueTypeId="6ae5d09b-3a0f-49e0-8d36-e6c66307a035"/>
+  </producedTypes>
+  <name>ТаблицаНевыходовПоВидамОтпусков</name>
+  <synonym>
+    <key>ru</key>
+    <value>Таблица невыходов по видам отпусков</value>
+  </synonym>
+  <synonym>
+    <key>uk</key>
+    <value>Таблиця невиходів за видами відпусток</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="036e1a1e-0775-4c77-b774-07f5fdcfca04">
+    <name>ДатаНачалаИсключенияИзСтажа</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата начала исключения из стажа</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Дата початку виключення зі стажу</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="83909cb7-a108-4833-9a8a-cb87917f46de">
+    <name>ВидОтпуска</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид отпуска</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Вид відпустки</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ВидыОтпусков</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="23524b78-1a66-4c81-9b09-8a58a8571d60">
+    <name>СостояниеСотрудника</name>
+    <synonym>
+      <key>ru</key>
+      <value>Состояние сотрудника</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Стан співробітника</value>
+    </synonym>
+    <type>
+      <types>EnumRef.СостоянияСотрудника</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <templates uuid="9dc8aa0d-2341-4a76-9f3a-8747fc349aba">
+    <name>НачальноеЗаполнение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Начальное заполнение</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Початкове заповнення</value>
+    </synonym>
+    <templateType>TextDocument</templateType>
+  </templates>
+</mdclass:InformationRegister>

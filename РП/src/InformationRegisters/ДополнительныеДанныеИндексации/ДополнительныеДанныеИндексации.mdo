@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="08f41772-8052-4020-8a79-e4e93ddfd77a">
+  <producedTypes>
+    <selectionType typeId="82cbec56-9327-40da-bcd8-5ff287ff920d" valueTypeId="7921260b-7f33-4d07-a105-b3f956c108be"/>
+    <listType typeId="f3ac0505-ef0e-4813-b2d8-a314dac5e4ac" valueTypeId="f5556987-c463-448a-8803-a7e5cd9f250b"/>
+    <managerType typeId="14dc1583-4950-4b60-b48e-41f17858e5fe" valueTypeId="5a5831e4-601a-4f04-8a86-221d8edd9f81"/>
+    <recordSetType typeId="873fe524-b29e-4776-80fe-7e9d47fbad06" valueTypeId="70120859-d29a-4965-9df8-3c558bbda402"/>
+    <recordKeyType typeId="79f3a880-622a-4384-8ecc-06f5d02fbb15" valueTypeId="fd484a2c-fd59-4a7e-9ab7-8dd327347452"/>
+    <recordType typeId="8852b7da-13c1-4da3-8a33-5c3d9d3e2db3" valueTypeId="7d5d284a-e628-45ec-95f1-17260f14431d"/>
+    <recordManagerType typeId="2b6e9efa-3d34-4ec7-a79c-8bb035d48675" valueTypeId="69ac504f-c25d-40ba-9553-76d7d375870c"/>
+  </producedTypes>
+  <name>ДополнительныеДанныеИндексации</name>
+  <synonym>
+    <key>ru</key>
+    <value>Дополнительные данные индексации</value>
+  </synonym>
+  <synonym>
+    <key>uk</key>
+    <value>Додаткові дані індексації</value>
+  </synonym>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <informationRegisterPeriodicity>Month</informationRegisterPeriodicity>
+  <writeMode>RecorderSubordinate</writeMode>
+  <help>
+    <pages>
+      <lang>uk</lang>
+    </pages>
+  </help>
+  <resources uuid="1e593bfd-2dbd-44e4-9411-5192547dc49f">
+    <name>ПроиндексированныйДоход</name>
+    <synonym>
+      <key>ru</key>
+      <value>Проиндексированный доход</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Проіндексований дохід</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <attributes uuid="23278cd4-e8fc-4703-bfef-d0ed2e364d15">
+    <name>Работодатель</name>
+    <synonym>
+      <key>ru</key>
+      <value>Работодатель</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Роботодавець</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Работодатели</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <dimensions uuid="5c315106-169b-4a2b-95dc-6453234d1aca">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Організація</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="b086640e-dd88-4459-85dd-771eba61a4b0">
+    <name>Сотрудник</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сотрудник</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Співробітник</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Сотрудники</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cmi:CommandInterface xmlns:cmi="http://g5.1c.ru/v8/dt/cmi">
+  <commandsVisibility>
+    <visibilityFragments>
+      <command>Document.УДАЛИТЬВыпискаПоРасчетномуСчету.StandardCommand.OpenList</command>
+      <visible/>
+    </visibilityFragments>
+    <visibilityFragments>
+      <command>Document.ПоступлениеБезналичныхДенежныхСредств.StandardCommand.OpenList</command>
+      <visible/>
+    </visibilityFragments>
+    <visibilityFragments>
+      <command>Document.СписаниеБезналичныхДенежныхСредств.StandardCommand.OpenList</command>
+      <visible/>
+    </visibilityFragments>
+    <visibilityFragments>
+      <command>Document.ОтчетБанкаПоОперациямЭквайринга.StandardCommand.OpenList</command>
+      <visible/>
+    </visibilityFragments>
+    <visibilityFragments>
+      <command>Document.ОперацияПоПлатежнойКарте.StandardCommand.OpenList</command>
+      <visible/>
+    </visibilityFragments>
+  </commandsVisibility>
+  <commandsOrder>
+    <orderFragments>
+      <group>NavigationPanelOrdinary</group>
+      <commands>Document.УДАЛИТЬВыпискаПоРасчетномуСчету.StandardCommand.OpenList</commands>
+      <commands>Document.ПоступлениеБезналичныхДенежныхСредств.StandardCommand.OpenList</commands>
+      <commands>Document.СписаниеБезналичныхДенежныхСредств.StandardCommand.OpenList</commands>
+      <commands>Document.ОтчетБанкаПоОперациямЭквайринга.StandardCommand.OpenList</commands>
+      <commands>Document.ОперацияПоПлатежнойКарте.StandardCommand.OpenList</commands>
+      <commands>Document.ОперацияПоПлатежнойКарте.Command.ЭквайринговыеОперации</commands>
+      <commands>Document.ОтчетБанкаПоОперациямЭквайринга.Command.ОтчетыБанковПоЭквайрингу</commands>
+    </orderFragments>
+  </commandsOrder>
+</cmi:CommandInterface>

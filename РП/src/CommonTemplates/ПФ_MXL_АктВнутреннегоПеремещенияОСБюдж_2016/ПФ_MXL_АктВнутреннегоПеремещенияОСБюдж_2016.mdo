@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonTemplate xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="69d7a0f2-52c8-49cf-989c-7d127c947cda">
+  <name>ПФ_MXL_АктВнутреннегоПеремещенияОСБюдж_2016</name>
+  <synonym>
+    <key>ru</key>
+    <value>Акт внутреннего перемещения основных средств</value>
+  </synonym>
+  <synonym>
+    <key>uk</key>
+    <value>Акт внутрішнього переміщення основних засобів</value>
+  </synonym>
+</mdclass:CommonTemplate>

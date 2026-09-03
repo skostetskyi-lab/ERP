@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:FunctionalOption xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="851920c5-6596-4720-92e7-c0c8100553b3">
+  <name>ИспользоватьРаботуСНефиксированнымРабочимВременем</name>
+  <synonym>
+    <key>ru</key>
+    <value>Используется работа с нефиксированным рабочим временем</value>
+  </synonym>
+  <synonym>
+    <key>uk</key>
+    <value>Використовується робота з нефіксованим робочим часом</value>
+  </synonym>
+  <location>InformationRegister.НастройкиКадровогоУчета.Resource.ИспользоватьРаботуСНефиксированнымРабочимВременем</location>
+  <privilegedGetMode>true</privilegedGetMode>
+  <content>InformationRegister.КадроваяИсторияСотрудников.Resource.РаботаСНефиксированнымРабочимВременем</content>
+  <content>Document.ПриемНаРаботу.Attribute.РаботаСНефиксированнымРабочимВременем</content>
+  <content>Document.ПриемНаРаботуСписком.TabularSection.Сотрудники.Attribute.РаботаСНефиксированнымРабочимВременем</content>
+  <content>Document.КадровыйПеревод.Attribute.РаботаСНефиксированнымРабочимВременем</content>
+  <content>Document.КадровыйПереводСписком.TabularSection.Сотрудники.Attribute.РаботаСНефиксированнымРабочимВременем</content>
+  <content>Document.НачальнаяШтатнаяРасстановка.TabularSection.Сотрудники.Attribute.РаботаСНефиксированнымРабочимВременем</content>
+  <content>Document.ПеремещениеВДругоеПодразделение.TabularSection.Сотрудники.Attribute.РаботаСНефиксированнымРабочимВременем</content>
+</mdclass:FunctionalOption>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="2b1a1e96-bfbe-4d4a-9efc-72b6155664ab">
+  <producedTypes>
+    <objectType typeId="a08cae4a-bb2a-4ace-accb-34ed0b0565c3" valueTypeId="73e8bc4d-d0ac-4281-a1cc-65f0fe70fb4e"/>
+    <managerType typeId="fd41d4c9-216d-477a-a329-e1628354a9f1" valueTypeId="e7ff41b2-569d-41e6-beac-f444ab4dc097"/>
+  </producedTypes>
+  <name>СтажиСотрудниковПоДаннымПФУ</name>
+  <synonym>
+    <key>ru</key>
+    <value>Стажи сотрудников по данным ПФУ</value>
+  </synonym>
+  <synonym>
+    <key>uk</key>
+    <value>Стажі співробітників за даними ПФУ</value>
+  </synonym>
+  <mainDataCompositionSchema>Report.СтажиСотрудниковПоДаннымПФУ.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <variantsStorage>SettingsStorage.ХранилищеВариантовОтчетов</variantsStorage>
+  <templates uuid="0de8cefd-64fd-4bdd-bed1-1a724dae128d">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Основна схема компонування даних</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

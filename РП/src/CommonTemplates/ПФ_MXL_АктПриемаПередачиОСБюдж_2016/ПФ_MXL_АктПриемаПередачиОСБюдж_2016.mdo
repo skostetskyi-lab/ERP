@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonTemplate xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="5335a21e-05fa-48d7-b200-d6905c486933">
+  <name>ПФ_MXL_АктПриемаПередачиОСБюдж_2016</name>
+  <synonym>
+    <key>ru</key>
+    <value>Акт приема-передачи основных средств</value>
+  </synonym>
+  <synonym>
+    <key>uk</key>
+    <value>Акт прийому-передачі основних засобів</value>
+  </synonym>
+</mdclass:CommonTemplate>

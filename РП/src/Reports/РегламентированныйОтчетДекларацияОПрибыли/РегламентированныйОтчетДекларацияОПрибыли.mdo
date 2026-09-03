@@ -1,0 +1,3700 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="28b362d7-9945-4034-930a-e669367dd033">
+  <producedTypes>
+    <objectType typeId="3db5547d-94bc-46b5-a15b-55456e7e8d74" valueTypeId="27255d3c-9359-4ebf-b256-d0212b49f5d4"/>
+    <managerType typeId="a4765042-9de3-4966-94e7-8d8fd225d81e" valueTypeId="b7103675-2537-4b3b-b8cd-9d91370106c9"/>
+  </producedTypes>
+  <name>РегламентированныйОтчетДекларацияОПрибыли</name>
+  <synonym>
+    <key>ru</key>
+    <value>Декларация о прибыли</value>
+  </synonym>
+  <synonym>
+    <key>uk</key>
+    <value>Декларація про прибуток</value>
+  </synonym>
+  <defaultForm>Report.РегламентированныйОтчетДекларацияОПрибыли.Form.ОсновнаяФорма</defaultForm>
+  <attributes uuid="f5ce4eeb-d5bf-4ee2-8a57-dc5f50367b78">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Організація</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="0988b6cc-4fef-412e-b1c1-1e5cf658fbb3">
+    <name>Периодичность</name>
+    <synonym>
+      <key>ru</key>
+      <value>Периодичность</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Періодичність</value>
+    </synonym>
+    <comment>Периодичность представления отчета</comment>
+    <type>
+      <types>EnumRef.Периодичность</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="79ab71d3-a03f-4ece-9d3c-806f7da1ad39">
+    <name>ДатаПодписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата подписи</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Дата підпису</value>
+    </synonym>
+    <comment>Дата подписи</comment>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="e2af4cb9-86b8-4d8e-a842-9a81c18cfc80">
+    <name>ЕдиницаИзмерения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Единица измерения</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Одиниця виміру</value>
+    </synonym>
+    <type>
+      <types>EnumRef.ПорядкиОкругленияОтчетности</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="5d2309d0-427e-45d3-81f7-fab7bfd0c882">
+    <name>ТочностьЕдиницыИзмерения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Точность единицы измерения</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Точність одиниці виміру</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>1</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="20fb50a1-8d86-44af-9d33-982a0b1e3b44">
+    <name>Комментарий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Комментарий</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Коментар</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="4569aa7f-fa28-4da1-b656-45a28083da45">
+    <name>ВариантОтраженияРаспределяемыхОПЗ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вариант отражения распределяемых ОПЗ</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Варіант відображення ЗВВ, що розподіляються</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>1</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <forms uuid="d60e8737-e315-42d5-82dc-96c0241a4c22">
+    <name>ОсновнаяФорма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Декларация о прибыли</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Декларація про прибуток</value>
+    </synonym>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+      <pages>
+        <lang>uk</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="e9030394-6c01-4c72-b408-d9916ed26048">
+    <name>ФормаНастройкиСтраниц</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма настройки страниц</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма настройки сторінок</value>
+    </synonym>
+    <formType>Ordinary</formType>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="12f1e4da-b530-4b43-a402-4494e4e54f4f">
+    <name>ФормаОтчета2012Кв1</name>
+    <synonym>
+      <key>ru</key>
+      <value>Декларация о прибыли</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Декларація про прибуток</value>
+    </synonym>
+    <formType>Ordinary</formType>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="1dccff40-0c71-4315-92a8-81b96217e8d0">
+    <name>ФормаОтчета2013Кв1</name>
+    <synonym>
+      <key>ru</key>
+      <value>Декларация о прибыли</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Декларація про прибуток</value>
+    </synonym>
+    <formType>Ordinary</formType>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="add2b1ea-2309-42cd-b400-3a6d7e5f5614">
+    <name>ФормаОтчета2014Кв1</name>
+    <synonym>
+      <key>ru</key>
+      <value>Декларация о прибыли</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Декларація про прибуток</value>
+    </synonym>
+    <formType>Ordinary</formType>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="c2b25f95-606a-4614-a988-edd257ba32b1">
+    <name>ФормаОтчета2015Кв1</name>
+    <synonym>
+      <key>ru</key>
+      <value>Декларация о прибыли</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Декларація про прибуток</value>
+    </synonym>
+    <formType>Ordinary</formType>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="48d477bf-f7b9-4c86-8115-cd8cba09e47b">
+    <name>ФормаОтчета2016Кв3</name>
+    <synonym>
+      <key>ru</key>
+      <value>Декларация о прибыли</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Декларація про прибуток</value>
+    </synonym>
+    <formType>Ordinary</formType>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="52745a74-d1dd-46ec-b295-c9d571404130">
+    <name>ФормаОтчета2017Кв3</name>
+    <synonym>
+      <key>ru</key>
+      <value>Декларация о прибыли</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Декларація про прибуток</value>
+    </synonym>
+    <formType>Ordinary</formType>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="5cd610b8-220d-43be-8cef-b2ee84c15acc">
+    <name>ФормаСпискаДопСтраниц</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка дополнительных страниц</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма списку додаткових сторінок</value>
+    </synonym>
+    <comment>Форма выбора страниц отчета при печати</comment>
+    <formType>Ordinary</formType>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="0e3a508a-883f-4d39-a95c-960d49d7467e">
+    <name>ПараметрыОтчета2016Кв3УФ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Параметры отчета2016 кв3 УФ</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Параметри звіту 2015 кв1 УФ</value>
+    </synonym>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+      <pages>
+        <lang>uk</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="c478e60c-e6db-4e35-8adf-828ba6431731">
+    <name>ФормаОтчета2016Кв3УФ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Декларация о прибыли</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Декларація про прибуток</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="5cee579a-e9ee-44a9-af5e-3dcf0b39da5d">
+    <name>ПараметрыОтчета2017Кв3УФ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Параметры отчета2017 кв3 УФ</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Параметри звіту 2015 кв1 УФ</value>
+    </synonym>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+      <pages>
+        <lang>uk</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="6746fe82-4cb3-45f4-8b61-13c6715673ec">
+    <name>ФормаОтчета2017Кв3УФ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Декларация о прибыли</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Декларація про прибуток</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="e8b30e20-45b3-4e4b-b123-b272f2011e70">
+    <name>ФормаОтчета2019Кв1УФ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Декларация о прибыли</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Декларація про прибуток</value>
+    </synonym>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+      <pages>
+        <lang>uk</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="751e27c6-1b51-459e-9e72-2772e5242950">
+    <name>ПараметрыОтчета2019Кв1УФ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Параметры отчета2019 кв1 УФ</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Параметри звіту 2015 кв1 УФ</value>
+    </synonym>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+      <pages>
+        <lang>uk</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="ae6fdeac-ecad-4cbe-b130-bda5b7e74ddb">
+    <name>ФормаОтчета2019Кв1</name>
+    <synonym>
+      <key>ru</key>
+      <value>Декларация о прибыли</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Декларація про прибуток</value>
+    </synonym>
+    <formType>Ordinary</formType>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="bd2144fd-3201-4da9-9996-c2756d57160a">
+    <name>ФормаОтчета2020Кв1УФ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Декларация о прибыли</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Декларація про прибуток</value>
+    </synonym>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+      <pages>
+        <lang>uk</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="96239fc0-436f-4c5d-b203-50b13c82d749">
+    <name>ПараметрыОтчета2020Кв1УФ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Параметры отчета2020 кв1 УФ</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Параметри звіту 2015 кв1 УФ</value>
+    </synonym>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+      <pages>
+        <lang>uk</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="ee1c4bb0-4ecc-449f-ac7e-a9f84fd081ea">
+    <name>ФормаОтчета2021Кв1УФ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Декларация о прибыли</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Декларація про прибуток</value>
+    </synonym>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+      <pages>
+        <lang>uk</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="0bc33050-feb1-41c4-8bc1-359db2d7b270">
+    <name>ПараметрыОтчета2021Кв1УФ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Параметры отчета2021 кв1 УФ</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Параметри звіту 2015 кв1 УФ</value>
+    </synonym>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+      <pages>
+        <lang>uk</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="edacf549-1608-4083-b5a0-53900d984e2c">
+    <name>ФормаОтчета2021Кв4УФ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Декларация о прибыли</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Декларація про прибуток</value>
+    </synonym>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+      <pages>
+        <lang>uk</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="b04c088e-bf70-4d0a-8960-5dc748c70aaf">
+    <name>ПараметрыОтчета2021Кв4УФ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Параметры отчета2021 кв4 УФ</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Параметри звіту 2015 кв1 УФ</value>
+    </synonym>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+      <pages>
+        <lang>uk</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="e8435593-01c7-46e9-8c19-93bdddd55e2c">
+    <name>ФормаОтчета2022Кв1УФ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Декларация о прибыли</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Декларація про прибуток</value>
+    </synonym>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+      <pages>
+        <lang>uk</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="68166047-d35d-4a50-8fa8-9bac6e8d1ac8">
+    <name>ПараметрыОтчета2022Кв1УФ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Параметры отчета2022 кв1 УФ</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Параметри звіту 2015 кв1 УФ</value>
+    </synonym>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+      <pages>
+        <lang>uk</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="4871aa7b-faac-4c40-92ac-9fb180546998">
+    <name>ФормаОтчета2022Кв2УФ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Декларация о прибыли</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Декларація про прибуток</value>
+    </synonym>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+      <pages>
+        <lang>uk</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="f6f74b22-049a-450e-8ec8-e85724847156">
+    <name>ПараметрыОтчета2022Кв2УФ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Параметры отчета2022 кв2 УФ</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Параметри звіту 2015 кв1 УФ</value>
+    </synonym>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+      <pages>
+        <lang>uk</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="ed28e5f7-dd3d-473c-91ec-45bdd3172191">
+    <name>ФормаОтчета2023Кв1УФ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Декларация о прибыли</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Декларація про прибуток</value>
+    </synonym>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+      <pages>
+        <lang>uk</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="2ecac710-6c2c-477d-aaf0-013065ac8ba2">
+    <name>ПараметрыОтчета2023Кв1УФ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Параметры отчета2023 кв1 УФ</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Параметри звіту 2015 кв1 УФ</value>
+    </synonym>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+      <pages>
+        <lang>uk</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="b6a22245-0937-4301-a9e0-512bdd8dbf85">
+    <name>ФормаОтчета2023Кв2УФ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Декларация о прибыли</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Декларація про прибуток</value>
+    </synonym>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+      <pages>
+        <lang>uk</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="3ab8e89c-5b2a-48d6-976b-de819004d522">
+    <name>ПараметрыОтчета2023Кв2УФ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Параметры отчета2023 кв2 УФ</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Параметри звіту 2015 кв1 УФ</value>
+    </synonym>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+      <pages>
+        <lang>uk</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="0eb0e124-44ae-442f-96e6-4539bffb0126">
+    <name>ФормаОтчета2023Кв4УФ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Декларация о прибыли</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Декларація про прибуток</value>
+    </synonym>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+      <pages>
+        <lang>uk</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="35a8f5f8-99c8-4c83-a857-3f1fac7b27bb">
+    <name>ПараметрыОтчета2023Кв4УФ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Параметры отчета2023 кв4 УФ</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Параметри звіту 2015 кв1 УФ</value>
+    </synonym>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+      <pages>
+        <lang>uk</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="c0b83d9a-0d46-4712-ae43-773c4b7f0783">
+    <name>ФормаОтчета2024Кв2УФ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Декларация о прибыли</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Декларація про прибуток</value>
+    </synonym>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+      <pages>
+        <lang>uk</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="77138c2d-c145-42bf-9ec5-10c13978a468">
+    <name>ПараметрыОтчета2024Кв2УФ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Параметры отчета2024 кв2 УФ</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Параметри звіту 2015 кв1 УФ</value>
+    </synonym>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+      <pages>
+        <lang>uk</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="8d549f22-fae8-45f1-a373-cf7c4a151deb">
+    <name>ФормаОтчета2025Кв2УФ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Декларация о прибыли</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Декларація про прибуток</value>
+    </synonym>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+      <pages>
+        <lang>uk</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="4f198613-eff2-4207-8c53-1487b9787f0a">
+    <name>ПараметрыОтчета2025Кв2УФ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Параметры отчета2025 кв2 УФ</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Параметри звіту 2015 кв1 УФ</value>
+    </synonym>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+      <pages>
+        <lang>uk</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="b87d58e6-a1a7-4710-9d93-cbd95505793c">
+    <name>ФормаОтчета2025Кв3УФ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Декларация о прибыли</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Декларація про прибуток</value>
+    </synonym>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+      <pages>
+        <lang>uk</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="9ec1d757-2fc6-4ca4-b7cc-26a52fa0d64f">
+    <name>ПараметрыОтчета2025Кв3УФ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Параметры отчета2025 кв3 УФ</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Параметри звіту 2015 кв1 УФ</value>
+    </synonym>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+      <pages>
+        <lang>uk</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="d4d97d46-5b04-456a-b0ab-b77182bba95d">
+    <name>ФормаОтчета2025Кв4УФ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Декларация о прибыли</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Декларація про прибуток</value>
+    </synonym>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+      <pages>
+        <lang>uk</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="61337d2e-9af5-47c1-a048-7aa3b872167a">
+    <name>ПараметрыОтчета2025Кв4УФ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Параметры отчета2025 кв4 УФ</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Параметри звіту 2015 кв1 УФ</value>
+    </synonym>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+      <pages>
+        <lang>uk</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="3f1cbdcf-d925-4011-b2f0-4e55f9e60d3b">
+    <name>АрхивСхемXSD</name>
+    <synonym>
+      <key>ru</key>
+      <value>Архив схем XSD</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Архив схем XSD</value>
+    </synonym>
+    <templateType>BinaryData</templateType>
+  </templates>
+  <templates uuid="0c627f61-765d-475b-8e19-7aea2a48458a">
+    <name>ПоказателиЗвит1С</name>
+    <synonym>
+      <key>ru</key>
+      <value>Показатели &quot;FREDO Звіт&quot;</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Показатели &quot;FREDO Звіт&quot;</value>
+    </synonym>
+  </templates>
+  <templates uuid="4676f672-e8b5-4e4e-9174-05de3d4832f5">
+    <name>СоставПоказателей2012Кв1</name>
+    <synonym>
+      <key>ru</key>
+      <value>СоставПоказателей</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>СоставПоказателей</value>
+    </synonym>
+  </templates>
+  <templates uuid="2dd19230-1c02-480f-bf92-468ae77ad7c4">
+    <name>СоставПоказателей2013Кв1</name>
+    <synonym>
+      <key>ru</key>
+      <value>СоставПоказателей</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>СоставПоказателей</value>
+    </synonym>
+  </templates>
+  <templates uuid="e768ab22-4e20-4cff-8641-4770ba20d806">
+    <name>СоставПоказателей2014Кв1</name>
+    <synonym>
+      <key>ru</key>
+      <value>СоставПоказателей</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>СоставПоказателей</value>
+    </synonym>
+  </templates>
+  <templates uuid="5b1d9fe4-8528-4c2d-9d54-2c270987ccd6">
+    <name>СоставПоказателей2015Кв1</name>
+    <synonym>
+      <key>ru</key>
+      <value>СоставПоказателей</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>СоставПоказателей</value>
+    </synonym>
+  </templates>
+  <templates uuid="e97d3506-1f36-400f-8a7c-cef233fd1349">
+    <name>СоставПоказателей2016Кв3</name>
+    <synonym>
+      <key>ru</key>
+      <value>СоставПоказателей</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>СоставПоказателей</value>
+    </synonym>
+  </templates>
+  <templates uuid="58d3fb7b-e062-4a0b-ba2e-869fd22afa40">
+    <name>СоставПоказателей2016Кв3УФ</name>
+    <synonym>
+      <key>ru</key>
+      <value>СоставПоказателей</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>СоставПоказателей</value>
+    </synonym>
+  </templates>
+  <templates uuid="c67cb416-3316-41a2-b00b-7b6b84dbf0e3">
+    <name>ФормаОтчета2016Кв3УФ_Декларация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета2016 кв3 у ф декларация</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма отчета2016 кв3 у ф декларация</value>
+    </synonym>
+  </templates>
+  <templates uuid="9162ded4-c660-47f8-90c8-873c35312d71">
+    <name>ФормаОтчета2016Кв3УФ_ПриложениеЗП</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета2016 кв3 у ф приложение ЗП</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма отчета2016 кв3 у ф приложение ЗП</value>
+    </synonym>
+  </templates>
+  <templates uuid="d1cf8f01-ad5b-484b-92cb-9d5903419539">
+    <name>ФормаОтчета2016Кв3УФ_ПриложениеТЦ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета2016 кв3 у ф приложение ТЦ</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма отчета2016 кв3 у ф приложение ТЦ</value>
+    </synonym>
+  </templates>
+  <templates uuid="df1a8c7a-7a28-4b9f-9db0-80aee60053d7">
+    <name>ФормаОтчета2016Кв3УФ_ПриложениеРИ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета2016 кв3 у ф приложение РИ</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма отчета2016 кв3 у ф приложение РИ</value>
+    </synonym>
+  </templates>
+  <templates uuid="e00e5db8-a31c-4b5a-84f8-4fe836f74e31">
+    <name>ФормаОтчета2016Кв3УФ_ПриложениеАМ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета2016 кв3 у ф приложение АМ</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма отчета2016 кв3 у ф приложение АМ</value>
+    </synonym>
+  </templates>
+  <templates uuid="72bf728e-bdae-4ef4-8341-677598f10862">
+    <name>ФормаОтчета2016Кв3УФ_СлужебныеДанные</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета2016 кв3 у ф служебные данные</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма отчета2016 кв3 у ф служебные данные</value>
+    </synonym>
+  </templates>
+  <templates uuid="c977253b-79a6-481b-ac32-f541a2b285a5">
+    <name>ФормаОтчета2016Кв3УФ_ПриложениеАВ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета2016 кв3 у ф приложение АВ</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма отчета2016 кв3 у ф приложение АВ</value>
+    </synonym>
+  </templates>
+  <templates uuid="01fa2ac6-fff3-4b90-80e7-73b1e5da53db">
+    <name>ФормаОтчета2016Кв3УФ_ПриложениеПН</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета2016 кв3 у ф приложение ПН</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма отчета2016 кв3 у ф приложение ПН</value>
+    </synonym>
+  </templates>
+  <templates uuid="f2b54239-02e4-49f4-9c06-e8864e47be33">
+    <name>ФормаОтчета2016Кв3УФ_ПриложениеВП</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета2016 кв3 у ф приложение ВП</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма отчета2016 кв3 у ф приложение ВП</value>
+    </synonym>
+  </templates>
+  <templates uuid="a30d5125-9044-4d7f-a80d-9a95ed7c5784">
+    <name>ФормаОтчета2016Кв3УФ_ПриложениеЦП</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета2016 кв3 у ф приложение ЦП</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма отчета2016 кв3 у ф приложение ЦП</value>
+    </synonym>
+  </templates>
+  <templates uuid="e921165e-63e6-4b39-b165-5a84ef3ebeb4">
+    <name>ФормаОтчета2016Кв3УФ_ПриложениеПЗ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета2016 кв3 у ф приложение ПЗ</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма отчета2016 кв3 у ф приложение ПЗ</value>
+    </synonym>
+  </templates>
+  <templates uuid="5b4b230d-597d-4d37-8ca8-f0fcfc670eea">
+    <name>СоставПоказателей2017Кв3</name>
+    <synonym>
+      <key>ru</key>
+      <value>СоставПоказателей</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>СоставПоказателей</value>
+    </synonym>
+  </templates>
+  <templates uuid="fc2ddbbf-c2b8-44b6-ab00-41d7b5592348">
+    <name>СоставПоказателей2017Кв3УФ</name>
+    <synonym>
+      <key>ru</key>
+      <value>СоставПоказателей</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>СоставПоказателей</value>
+    </synonym>
+  </templates>
+  <templates uuid="c956cb1a-7e97-4481-847b-ea21a4cd2859">
+    <name>ФормаОтчета2017Кв3УФ_Декларация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета2017 кв3 у ф декларация</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма отчета2017 кв3 у ф декларация</value>
+    </synonym>
+  </templates>
+  <templates uuid="e42d7060-0140-4f6c-bf9c-81d1bf764411">
+    <name>ФормаОтчета2017Кв3УФ_ПриложениеЗП</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета2017 кв3 у ф приложение ЗП</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма отчета2017 кв3 у ф приложение ЗП</value>
+    </synonym>
+  </templates>
+  <templates uuid="dfee06b5-9b74-4ed1-b2b7-4516fb45c4e7">
+    <name>ФормаОтчета2017Кв3УФ_ПриложениеПН</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета2017 кв3 у ф приложение ПН</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма отчета2017 кв3 у ф приложение ПН</value>
+    </synonym>
+  </templates>
+  <templates uuid="a964025b-0d8d-4f53-9cb0-544bf9443273">
+    <name>ФормаОтчета2017Кв3УФ_ПриложениеТЦ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета2017 кв3 у ф приложение ТЦ</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма отчета2017 кв3 у ф приложение ТЦ</value>
+    </synonym>
+  </templates>
+  <templates uuid="39d67d57-4f53-4421-a4b5-e2f9c878fdea">
+    <name>ФормаОтчета2017Кв3УФ_ПриложениеВП</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета2017 кв3 у ф приложение ВП</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма отчета2017 кв3 у ф приложение ВП</value>
+    </synonym>
+  </templates>
+  <templates uuid="f3a88c78-7264-493b-aa6d-c66f6d5a06f2">
+    <name>ФормаОтчета2017Кв3УФ_ПриложениеРИ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета2017 кв3 у ф приложение РИ</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма отчета2017 кв3 у ф приложение РИ</value>
+    </synonym>
+  </templates>
+  <templates uuid="d9e42cdd-bd4b-4621-8823-69aaff3c1c02">
+    <name>ФормаОтчета2017Кв3УФ_ПриложениеПЗ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета2017 кв3 у ф приложение ПЗ</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма отчета2017 кв3 у ф приложение ПЗ</value>
+    </synonym>
+  </templates>
+  <templates uuid="2fb494d3-840c-45ca-b1c3-af722426d5c6">
+    <name>ФормаОтчета2017Кв3УФ_ПриложениеАМ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета2017 кв3 у ф приложение АМ</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма отчета2017 кв3 у ф приложение АМ</value>
+    </synonym>
+  </templates>
+  <templates uuid="bc4f36e7-fc79-442c-bd64-45c80ddef0cd">
+    <name>ФормаОтчета2017Кв3УФ_ПриложениеЦП</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета2017 кв3 у ф приложение ЦП</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма отчета2017 кв3 у ф приложение ЦП</value>
+    </synonym>
+  </templates>
+  <templates uuid="3da33e04-7800-4da6-a82c-009d8ea7d8b3">
+    <name>ФормаОтчета2017Кв3УФ_ПриложениеАВ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета2017 кв3 у ф приложение АВ</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма отчета2017 кв3 у ф приложение АВ</value>
+    </synonym>
+  </templates>
+  <templates uuid="6bd214d9-e59f-4a0a-8a08-e42c4b1ce97a">
+    <name>ФормаОтчета2017Кв3УФ_СлужебныеДанные</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета2017 кв3 у ф служебные данные</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма отчета2017 кв3 у ф служебные данные</value>
+    </synonym>
+  </templates>
+  <templates uuid="bc4a24b3-5557-4d66-8bdf-4bde947991fe">
+    <name>СоставПоказателей2019Кв1</name>
+    <synonym>
+      <key>ru</key>
+      <value>СоставПоказателей</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>СоставПоказателей</value>
+    </synonym>
+  </templates>
+  <templates uuid="e57d9356-12e9-423c-874e-ab52ef71c779">
+    <name>СоставПоказателей2019Кв1УФ</name>
+    <synonym>
+      <key>ru</key>
+      <value>СоставПоказателей</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>СоставПоказателей</value>
+    </synonym>
+  </templates>
+  <templates uuid="c00330e4-676e-4c69-8d28-d734219ad56e">
+    <name>ФормаОтчета2019Кв1УФ_Декларация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета2019 кв1 у ф декларация</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма отчета2019 кв1 у ф декларация</value>
+    </synonym>
+  </templates>
+  <templates uuid="5b951271-a42e-4910-9248-6e78df18b344">
+    <name>ФормаОтчета2019Кв1УФ_ПриложениеАВ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета2019 кв1 у ф приложение АВ</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма отчета2019 кв1 у ф приложение АВ</value>
+    </synonym>
+  </templates>
+  <templates uuid="eba34b47-27a6-49a9-953b-1ecc1158efb3">
+    <name>ФормаОтчета2019Кв1УФ_ПриложениеЗП</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета2019 кв1 у ф приложение ЗП</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма отчета2019 кв1 у ф приложение ЗП</value>
+    </synonym>
+  </templates>
+  <templates uuid="47b4e085-a1c1-46be-be6b-01b2add3c634">
+    <name>ФормаОтчета2019Кв1УФ_ПриложениеПН</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета2019 кв1 у ф приложение ПН</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма отчета2019 кв1 у ф приложение ПН</value>
+    </synonym>
+  </templates>
+  <templates uuid="f8ce18ac-358e-40a3-bd63-9d670cbf10ce">
+    <name>ФормаОтчета2019Кв1УФ_ПриложениеТЦ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета2019 кв1 у ф приложение ТЦ</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма отчета2019 кв1 у ф приложение ТЦ</value>
+    </synonym>
+  </templates>
+  <templates uuid="e54c9084-153a-4bde-83d9-fb70d481dbc6">
+    <name>ФормаОтчета2019Кв1УФ_ПриложениеВП</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета2019 кв1 у ф приложение ВП</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма отчета2019 кв1 у ф приложение ВП</value>
+    </synonym>
+  </templates>
+  <templates uuid="012111f6-f6b2-41cf-8b37-e532369ecdc0">
+    <name>ФормаОтчета2019Кв1УФ_ПриложениеРИ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета2019 кв1 у ф приложение РИ</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма отчета2019 кв1 у ф приложение РИ</value>
+    </synonym>
+  </templates>
+  <templates uuid="9700630a-43bb-4cbb-89a9-237d36a9172f">
+    <name>ФормаОтчета2019Кв1УФ_ПриложениеПЗ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета2019 кв1 у ф приложение ПЗ</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма отчета2019 кв1 у ф приложение ПЗ</value>
+    </synonym>
+  </templates>
+  <templates uuid="698658d3-9ed1-40b4-a278-31f9009af0db">
+    <name>ФормаОтчета2019Кв1УФ_ПриложениеАМ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета2019 кв1 у ф приложение АМ</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма отчета2019 кв1 у ф приложение АМ</value>
+    </synonym>
+  </templates>
+  <templates uuid="4863c5e4-8263-40d9-a57d-7ff95ffbebea">
+    <name>ФормаОтчета2019Кв1УФ_ПриложениеЦП</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета2019 кв1 у ф приложение ЦП</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма отчета2019 кв1 у ф приложение ЦП</value>
+    </synonym>
+  </templates>
+  <templates uuid="8d221766-ad0d-4d2b-8569-846f72ce816d">
+    <name>ФормаОтчета2019Кв1УФ_СлужебныеДанные</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета2019 кв1 у ф служебные данные</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма отчета2019 кв1 у ф служебные данные</value>
+    </synonym>
+  </templates>
+  <templates uuid="d1123234-72fc-49e5-8399-d793ea34d27c">
+    <name>СоставПоказателей2020Кв1УФ</name>
+    <synonym>
+      <key>ru</key>
+      <value>СоставПоказателей</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>СоставПоказателей</value>
+    </synonym>
+  </templates>
+  <templates uuid="2c2d0905-264d-45ef-a4b2-066a886c933b">
+    <name>ФормаОтчета2020Кв1УФ_Декларация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета2020 кв1 у ф декларация</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма отчета2020 кв1 у ф декларация</value>
+    </synonym>
+  </templates>
+  <templates uuid="7bddafa7-42a7-4482-8799-25a7b97f5652">
+    <name>ФормаОтчета2020Кв1УФ_ПриложениеАВ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета2020 кв1 у ф приложение АВ</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма отчета2020 кв1 у ф приложение АВ</value>
+    </synonym>
+  </templates>
+  <templates uuid="eca08b63-96b9-43e9-86d4-d9ee1f6825dd">
+    <name>ФормаОтчета2020Кв1УФ_ПриложениеЗП</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета2020 кв1 у ф приложение ЗП</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма отчета2020 кв1 у ф приложение ЗП</value>
+    </synonym>
+  </templates>
+  <templates uuid="335f5426-fe2e-4632-8770-66fc56664b42">
+    <name>ФормаОтчета2020Кв1УФ_ПриложениеПН</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета2020 кв1 у ф приложение ПН</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма отчета2020 кв1 у ф приложение ПН</value>
+    </synonym>
+  </templates>
+  <templates uuid="7c0275d4-5929-4a7d-ba39-3c19f1ee3955">
+    <name>ФормаОтчета2020Кв1УФ_ПриложениеТЦ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета2020 кв1 у ф приложение ТЦ</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма отчета2020 кв1 у ф приложение ТЦ</value>
+    </synonym>
+  </templates>
+  <templates uuid="c3bdbeb6-625b-42fa-91d7-1d620a7d48de">
+    <name>ФормаОтчета2020Кв1УФ_ПриложениеВП</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета2020 кв1 у ф приложение ВП</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма отчета2020 кв1 у ф приложение ВП</value>
+    </synonym>
+  </templates>
+  <templates uuid="34d49fc6-cc5d-4316-b0e1-9f4054b64762">
+    <name>ФормаОтчета2020Кв1УФ_ПриложениеРИ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета2020 кв1 у ф приложение РИ</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма отчета2020 кв1 у ф приложение РИ</value>
+    </synonym>
+  </templates>
+  <templates uuid="a83e6bce-17cf-4886-b4ca-7c033d0a709c">
+    <name>ФормаОтчета2020Кв1УФ_ПриложениеПЗ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета2020 кв1 у ф приложение ПЗ</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма отчета2020 кв1 у ф приложение ПЗ</value>
+    </synonym>
+  </templates>
+  <templates uuid="9eff613c-30d3-4fed-beee-83ebcccad237">
+    <name>ФормаОтчета2020Кв1УФ_ПриложениеАМ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета2020 кв1 у ф приложение АМ</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма отчета2020 кв1 у ф приложение АМ</value>
+    </synonym>
+  </templates>
+  <templates uuid="32f17cae-ebb3-4d6a-843d-e92522e35c74">
+    <name>ФормаОтчета2020Кв1УФ_ПриложениеЦП</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета2020 кв1 у ф приложение ЦП</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма отчета2020 кв1 у ф приложение ЦП</value>
+    </synonym>
+  </templates>
+  <templates uuid="7f4aafc5-d9a0-48fc-ade8-4370593b486b">
+    <name>ФормаОтчета2020Кв1УФ_ПриложениеПП</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета2020 кв1 у ф приложение ПП</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма отчета2020 кв1 у ф приложение ПП</value>
+    </synonym>
+  </templates>
+  <templates uuid="8f99aaac-bcf7-4686-89df-0e4e762706aa">
+    <name>ФормаОтчета2020Кв1УФ_СлужебныеДанные</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета2020 кв1 у ф служебные данные</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма отчета2020 кв1 у ф служебные данные</value>
+    </synonym>
+  </templates>
+  <templates uuid="6980987a-5768-4eaa-a37e-74f861187e3f">
+    <name>СоставПоказателей2021Кв1УФ</name>
+    <synonym>
+      <key>ru</key>
+      <value>СоставПоказателей</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>СоставПоказателей</value>
+    </synonym>
+  </templates>
+  <templates uuid="81ce3062-5557-40a2-80a6-3165b2e9f9d1">
+    <name>ФормаОтчета2021Кв1УФ_Декларация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета2021 кв1 у ф декларация</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма отчета2021 кв1 у ф декларация</value>
+    </synonym>
+  </templates>
+  <templates uuid="df819537-ea7b-416a-9b32-9fb053d7b1f6">
+    <name>ФормаОтчета2021Кв1УФ_ПриложениеАВ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета2021 кв1 у ф приложение АВ</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма отчета2021 кв1 у ф приложение АВ</value>
+    </synonym>
+  </templates>
+  <templates uuid="1e2c8b61-076a-43aa-9192-64c42496e9da">
+    <name>ФормаОтчета2021Кв1УФ_ПриложениеЗП</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета2021 кв1 у ф приложение ЗП</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма отчета2021 кв1 у ф приложение ЗП</value>
+    </synonym>
+  </templates>
+  <templates uuid="9cd7093f-eafc-4999-b2de-72f916e39e3a">
+    <name>ФормаОтчета2021Кв1УФ_ПриложениеПН</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета2021 кв1 у ф приложение ПН</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма отчета2021 кв1 у ф приложение ПН</value>
+    </synonym>
+  </templates>
+  <templates uuid="074757f9-63db-4fa4-a35e-01931e422169">
+    <name>ФормаОтчета2021Кв1УФ_ПриложениеТЦ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета2021 кв1 у ф приложение ТЦ</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма отчета2021 кв1 у ф приложение ТЦ</value>
+    </synonym>
+  </templates>
+  <templates uuid="95e21a99-6d64-485a-b800-18c633d0bee3">
+    <name>ФормаОтчета2021Кв1УФ_ПриложениеВП</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета2021 кв1 у ф приложение ВП</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма отчета2021 кв1 у ф приложение ВП</value>
+    </synonym>
+  </templates>
+  <templates uuid="4903afe5-caa8-482b-be9a-2c8bcbecfcd5">
+    <name>ФормаОтчета2021Кв1УФ_ПриложениеРИ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета2021 кв1 у ф приложение РИ</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма отчета2021 кв1 у ф приложение РИ</value>
+    </synonym>
+  </templates>
+  <templates uuid="311fc239-a997-4e55-8982-3922a133fc12">
+    <name>ФормаОтчета2021Кв1УФ_ПриложениеПЗ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета2021 кв1 у ф приложение ПЗ</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма отчета2021 кв1 у ф приложение ПЗ</value>
+    </synonym>
+  </templates>
+  <templates uuid="21af7d5e-01cd-4e92-9526-3e4b99bb9bbd">
+    <name>ФормаОтчета2021Кв1УФ_ПриложениеАМ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета2021 кв1 у ф приложение АМ</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма отчета2021 кв1 у ф приложение АМ</value>
+    </synonym>
+  </templates>
+  <templates uuid="3eaed966-8316-498d-b844-4574f1b0937c">
+    <name>ФормаОтчета2021Кв1УФ_ПриложениеЦП</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета2021 кв1 у ф приложение ЦП</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма отчета2021 кв1 у ф приложение ЦП</value>
+    </synonym>
+  </templates>
+  <templates uuid="51584f41-f413-4f3e-a51c-74c75066ad79">
+    <name>ФормаОтчета2021Кв1УФ_ПриложениеПП</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета2021 кв1 у ф приложение ПП</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма отчета2021 кв1 у ф приложение ПП</value>
+    </synonym>
+  </templates>
+  <templates uuid="c9cef865-f868-432d-ab8f-cf2e0cf47863">
+    <name>ФормаОтчета2021Кв1УФ_ПриложениеКИК</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета2021 кв1 у ф приложение КИК</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма отчета2021 кв1 у ф приложение КИК</value>
+    </synonym>
+  </templates>
+  <templates uuid="307359e9-da13-4fec-ac82-0e0bf1288efe">
+    <name>ФормаОтчета2021Кв1УФ_ПриложениеКК</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета2021 кв1 у ф приложение КК</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма отчета2021 кв1 у ф приложение КК</value>
+    </synonym>
+  </templates>
+  <templates uuid="d8c0324f-d0f1-4b72-9ff7-a17764ab36e1">
+    <name>ФормаОтчета2021Кв1УФ_ПриложениеКТЦ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета2021 кв1 у ф приложение КТЦ</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма отчета2021 кв1 у ф приложение КТЦ</value>
+    </synonym>
+  </templates>
+  <templates uuid="4e9fc8c8-a5a9-41fc-9bfb-aa23ca42dbc7">
+    <name>ФормаОтчета2021Кв1УФ_ПриложениеКЦП</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета2021 кв1 у ф приложение КЦП</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма отчета2021 кв1 у ф приложение КЦП</value>
+    </synonym>
+  </templates>
+  <templates uuid="9869b37a-3a79-40fd-a43c-ee5bc13c601a">
+    <name>ФормаОтчета2021Кв1УФ_СлужебныеДанные</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета2021 кв1 у ф служебные данные</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма отчета2021 кв1 у ф служебные данные</value>
+    </synonym>
+  </templates>
+  <templates uuid="1eca6e55-df72-476f-b674-471acaa72ae0">
+    <name>СоставПоказателей2021Кв4УФ</name>
+    <synonym>
+      <key>ru</key>
+      <value>СоставПоказателей</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>СоставПоказателей</value>
+    </synonym>
+  </templates>
+  <templates uuid="f26eb821-eefa-4370-8848-7b78107c8c34">
+    <name>ФормаОтчета2021Кв4УФ_Декларация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета2021 кв4 у ф декларация</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма отчета2021 кв4 у ф декларация</value>
+    </synonym>
+  </templates>
+  <templates uuid="7313dcf4-8805-410a-9064-186e75aa5c8e">
+    <name>ФормаОтчета2021Кв4УФ_ПриложениеАВ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета2021 кв4 у ф приложение АВ</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма отчета2021 кв4 у ф приложение АВ</value>
+    </synonym>
+  </templates>
+  <templates uuid="985d999d-90b5-40bd-898d-ecd4fd5559f5">
+    <name>ФормаОтчета2021Кв4УФ_ПриложениеЗП</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета2021 кв4 у ф приложение ЗП</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма отчета2021 кв4 у ф приложение ЗП</value>
+    </synonym>
+  </templates>
+  <templates uuid="3358ec70-4539-4509-bcd0-4ba6fe2117dd">
+    <name>ФормаОтчета2021Кв4УФ_ПриложениеПН</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета2021 кв4 у ф приложение ПН</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма отчета2021 кв4 у ф приложение ПН</value>
+    </synonym>
+  </templates>
+  <templates uuid="4d92825b-fd9d-4632-aee1-a3685e17765e">
+    <name>ФормаОтчета2021Кв4УФ_ПриложениеТЦ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета2021 кв4 у ф приложение ТЦ</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма отчета2021 кв4 у ф приложение ТЦ</value>
+    </synonym>
+  </templates>
+  <templates uuid="38da6c8f-ae27-4594-a96a-c47cab2dca89">
+    <name>ФормаОтчета2021Кв4УФ_ПриложениеВП</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета2021 кв4 у ф приложение ВП</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма отчета2021 кв4 у ф приложение ВП</value>
+    </synonym>
+  </templates>
+  <templates uuid="ab76c3c7-162f-43eb-b42f-d8be1f05e1fd">
+    <name>ФормаОтчета2021Кв4УФ_ПриложениеРИ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета2021 кв4 у ф приложение РИ</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма отчета2021 кв4 у ф приложение РИ</value>
+    </synonym>
+  </templates>
+  <templates uuid="60f760a3-2c8e-441b-aa7b-6c4e75f51db3">
+    <name>ФормаОтчета2021Кв4УФ_ПриложениеПЗ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета2021 кв4 у ф приложение ПЗ</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма отчета2021 кв4 у ф приложение ПЗ</value>
+    </synonym>
+  </templates>
+  <templates uuid="fd2c9c3b-c176-4a60-bf25-8a1f7e4ff67a">
+    <name>ФормаОтчета2021Кв4УФ_ПриложениеАМ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета2021 кв4 у ф приложение АМ</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма отчета2021 кв4 у ф приложение АМ</value>
+    </synonym>
+  </templates>
+  <templates uuid="3c5dcc22-e813-4a35-9e04-aa9036c8170c">
+    <name>ФормаОтчета2021Кв4УФ_ПриложениеЦП</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета2021 кв4 у ф приложение ЦП</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма отчета2021 кв4 у ф приложение ЦП</value>
+    </synonym>
+  </templates>
+  <templates uuid="4685b5db-ace9-47f5-9542-4464447bd855">
+    <name>ФормаОтчета2021Кв4УФ_ПриложениеПП</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета2021 кв4 у ф приложение ПП</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма отчета2021 кв4 у ф приложение ПП</value>
+    </synonym>
+  </templates>
+  <templates uuid="6ac66867-7f36-4efb-8077-36931baf7229">
+    <name>ФормаОтчета2021Кв4УФ_ПриложениеКИК</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета2021 кв4 у ф приложение КИК</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма отчета2021 кв4 у ф приложение КИК</value>
+    </synonym>
+  </templates>
+  <templates uuid="aca43906-8de9-419f-9516-14a58de1657d">
+    <name>ФормаОтчета2021Кв4УФ_ПриложениеКК</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета2021 кв4 у ф приложение КК</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма отчета2021 кв4 у ф приложение КК</value>
+    </synonym>
+  </templates>
+  <templates uuid="20015e3f-10fb-49be-9d23-ec9c4f994061">
+    <name>ФормаОтчета2021Кв4УФ_ПриложениеКТЦ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета2021 кв4 у ф приложение КТЦ</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма отчета2021 кв4 у ф приложение КТЦ</value>
+    </synonym>
+  </templates>
+  <templates uuid="f2f4e842-9113-447d-aa57-46546baabd49">
+    <name>ФормаОтчета2021Кв4УФ_ПриложениеКЦП</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета2021 кв4 у ф приложение КЦП</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма отчета2021 кв4 у ф приложение КЦП</value>
+    </synonym>
+  </templates>
+  <templates uuid="cd165236-841f-47db-9cd1-3450c8deae6f">
+    <name>ФормаОтчета2021Кв4УФ_СлужебныеДанные</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета2021 кв4 у ф служебные данные</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма отчета2021 кв4 у ф служебные данные</value>
+    </synonym>
+  </templates>
+  <templates uuid="11d91e37-8842-4cb5-8e6d-f01ca304a0b5">
+    <name>СоставПоказателей2022Кв1УФ</name>
+    <synonym>
+      <key>ru</key>
+      <value>СоставПоказателей</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>СоставПоказателей</value>
+    </synonym>
+  </templates>
+  <templates uuid="b4309912-4d87-4048-a39c-4a0c6707f5d2">
+    <name>ФормаОтчета2022Кв1УФ_Декларация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета2022 кв1 у ф декларация</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма отчета2022 кв1 у ф декларация</value>
+    </synonym>
+  </templates>
+  <templates uuid="d4174fbc-c8e3-4a1f-a95f-ef86df52d961">
+    <name>ФормаОтчета2022Кв1УФ_ПриложениеАВ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета2022 кв1 у ф приложение АВ</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма отчета2022 кв1 у ф приложение АВ</value>
+    </synonym>
+  </templates>
+  <templates uuid="5b80f4fa-0672-4df0-b735-892804ebc411">
+    <name>ФормаОтчета2022Кв1УФ_ПриложениеЗП</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета2022 кв1 у ф приложение ЗП</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма отчета2022 кв1 у ф приложение ЗП</value>
+    </synonym>
+  </templates>
+  <templates uuid="063638d7-cefd-4ab9-b2de-d4a9d3f649a6">
+    <name>ФормаОтчета2022Кв1УФ_ПриложениеПН</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета2022 кв1 у ф приложение ПН</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма отчета2022 кв1 у ф приложение ПН</value>
+    </synonym>
+  </templates>
+  <templates uuid="b266ac1b-0660-425b-a0c8-472cf3ea4528">
+    <name>ФормаОтчета2022Кв1УФ_ПриложениеТЦ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета2022 кв1 у ф приложение ТЦ</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма отчета2022 кв1 у ф приложение ТЦ</value>
+    </synonym>
+  </templates>
+  <templates uuid="885436ca-37f4-4626-9aee-6e706dca31c2">
+    <name>ФормаОтчета2022Кв1УФ_ПриложениеВП</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета2022 кв1 у ф приложение ВП</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма отчета2022 кв1 у ф приложение ВП</value>
+    </synonym>
+  </templates>
+  <templates uuid="587b9245-b85d-422d-ad0e-9203b52d5a3e">
+    <name>ФормаОтчета2022Кв1УФ_ПриложениеРИ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета2022 кв1 у ф приложение РИ</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма отчета2022 кв1 у ф приложение РИ</value>
+    </synonym>
+  </templates>
+  <templates uuid="0d0c6b0e-3fac-4085-ae18-bfaefa0e3275">
+    <name>ФормаОтчета2022Кв1УФ_ПриложениеПЗ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета2022 кв1 у ф приложение ПЗ</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма отчета2022 кв1 у ф приложение ПЗ</value>
+    </synonym>
+  </templates>
+  <templates uuid="1599d495-db2f-47bb-b33a-32a56aac75dc">
+    <name>ФормаОтчета2022Кв1УФ_ПриложениеАМ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета2022 кв1 у ф приложение АМ</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма отчета2022 кв1 у ф приложение АМ</value>
+    </synonym>
+  </templates>
+  <templates uuid="5b1331f1-ed0c-4f7b-a040-45a9d12ddb46">
+    <name>ФормаОтчета2022Кв1УФ_ПриложениеЦП</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета2022 кв1 у ф приложение ЦП</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма отчета2022 кв1 у ф приложение ЦП</value>
+    </synonym>
+  </templates>
+  <templates uuid="7cca6a56-1b07-45bb-a227-f5f6b04c2253">
+    <name>ФормаОтчета2022Кв1УФ_ПриложениеПП</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета2022 кв1 у ф приложение ПП</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма отчета2022 кв1 у ф приложение ПП</value>
+    </synonym>
+  </templates>
+  <templates uuid="a0d3fb97-9b60-475e-a78e-d8610ee5a68b">
+    <name>ФормаОтчета2022Кв1УФ_ПриложениеКИК</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета2022 кв1 у ф приложение КИК</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма отчета2022 кв1 у ф приложение КИК</value>
+    </synonym>
+  </templates>
+  <templates uuid="addee043-e5b3-44c2-a334-247e77b2b9c2">
+    <name>ФормаОтчета2022Кв1УФ_ПриложениеКК</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета2022 кв1 у ф приложение КК</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма отчета2022 кв1 у ф приложение КК</value>
+    </synonym>
+  </templates>
+  <templates uuid="bef272de-2417-4c78-a59e-8ea9b72ca238">
+    <name>ФормаОтчета2022Кв1УФ_ПриложениеКТЦ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета2022 кв1 у ф приложение КТЦ</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма отчета2022 кв1 у ф приложение КТЦ</value>
+    </synonym>
+  </templates>
+  <templates uuid="670ea0b5-4398-4b19-81a8-0c4d812a1815">
+    <name>ФормаОтчета2022Кв1УФ_ПриложениеКЦП</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета2022 кв1 у ф приложение КЦП</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма отчета2022 кв1 у ф приложение КЦП</value>
+    </synonym>
+  </templates>
+  <templates uuid="926769fd-c93a-4c49-a2dc-5d235bfb98d3">
+    <name>ФормаОтчета2022Кв1УФ_СлужебныеДанные</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета2022 кв1 у ф служебные данные</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма отчета2022 кв1 у ф служебные данные</value>
+    </synonym>
+  </templates>
+  <templates uuid="6b9e6796-ca5d-41a3-85d6-670b54390390">
+    <name>СоставПоказателей2022Кв2УФ</name>
+    <synonym>
+      <key>ru</key>
+      <value>СоставПоказателей</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>СоставПоказателей</value>
+    </synonym>
+  </templates>
+  <templates uuid="71d149a4-c19e-4071-a828-8250a5715814">
+    <name>ФормаОтчета2022Кв2УФ_Декларация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета2022 кв2 у ф декларация</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма отчета2022 кв2 у ф декларация</value>
+    </synonym>
+  </templates>
+  <templates uuid="bccfff21-9297-4dc8-82a0-7ec72c094ff7">
+    <name>ФормаОтчета2022Кв2УФ_ПриложениеАВ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета2022 кв2 у ф приложение АВ</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма отчета2022 кв2 у ф приложение АВ</value>
+    </synonym>
+  </templates>
+  <templates uuid="e1cf41be-076c-462a-b8ad-b83eb5a0e8b1">
+    <name>ФормаОтчета2022Кв2УФ_ПриложениеЗП</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета2022 кв2 у ф приложение ЗП</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма отчета2022 кв2 у ф приложение ЗП</value>
+    </synonym>
+  </templates>
+  <templates uuid="d67220a6-be40-4087-a315-89aae69a546b">
+    <name>ФормаОтчета2022Кв2УФ_ПриложениеПН</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета2022 кв2 у ф приложение ПН</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма отчета2022 кв2 у ф приложение ПН</value>
+    </synonym>
+  </templates>
+  <templates uuid="e18f5bc6-15a6-4c90-aa6e-f760e806e7fe">
+    <name>ФормаОтчета2022Кв2УФ_ПриложениеТЦ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета2022 кв2 у ф приложение ТЦ</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма отчета2022 кв2 у ф приложение ТЦ</value>
+    </synonym>
+  </templates>
+  <templates uuid="c3ac7662-7922-4cd6-bc75-593ce8d6e8b8">
+    <name>ФормаОтчета2022Кв2УФ_ПриложениеВП</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета2022 кв2 у ф приложение ВП</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма отчета2022 кв2 у ф приложение ВП</value>
+    </synonym>
+  </templates>
+  <templates uuid="23b2d382-e04e-4d09-bedc-f3a9a3811383">
+    <name>ФормаОтчета2022Кв2УФ_ПриложениеРИ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета2022 кв2 у ф приложение РИ</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма отчета2022 кв2 у ф приложение РИ</value>
+    </synonym>
+  </templates>
+  <templates uuid="5cc381e7-f847-4a1a-ab69-0661fbde9c3e">
+    <name>ФормаОтчета2022Кв2УФ_ПриложениеПЗ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета2022 кв2 у ф приложение ПЗ</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма отчета2022 кв2 у ф приложение ПЗ</value>
+    </synonym>
+  </templates>
+  <templates uuid="2ddf22c7-ddaa-46f7-8018-a2d78ecac187">
+    <name>ФормаОтчета2022Кв2УФ_ПриложениеАМ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета2022 кв2 у ф приложение АМ</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма отчета2022 кв2 у ф приложение АМ</value>
+    </synonym>
+  </templates>
+  <templates uuid="77eb55a5-7d62-427c-a142-f37ea7517cd5">
+    <name>ФормаОтчета2022Кв2УФ_ПриложениеЦП</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета2022 кв2 у ф приложение ЦП</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма отчета2022 кв2 у ф приложение ЦП</value>
+    </synonym>
+  </templates>
+  <templates uuid="11be1ec1-d399-4d49-aeab-dd0a9529adac">
+    <name>ФормаОтчета2022Кв2УФ_ПриложениеПП</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета2022 кв2 у ф приложение ПП</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма отчета2022 кв2 у ф приложение ПП</value>
+    </synonym>
+  </templates>
+  <templates uuid="5538596b-3396-47e6-b240-28deb8068020">
+    <name>ФормаОтчета2022Кв2УФ_ПриложениеКИК</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета2022 кв2 у ф приложение КИК</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма отчета2022 кв2 у ф приложение КИК</value>
+    </synonym>
+  </templates>
+  <templates uuid="e816a013-ab46-4162-bcb3-492abbc5361f">
+    <name>ФормаОтчета2022Кв2УФ_ПриложениеКК</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета2022 кв2 у ф приложение КК</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма отчета2022 кв2 у ф приложение КК</value>
+    </synonym>
+  </templates>
+  <templates uuid="1d414a14-a3a1-4748-b301-b545ec297a64">
+    <name>ФормаОтчета2022Кв2УФ_ПриложениеКТЦ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета2022 кв2 у ф приложение КТЦ</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма отчета2022 кв2 у ф приложение КТЦ</value>
+    </synonym>
+  </templates>
+  <templates uuid="43cf362c-ce91-409c-abe8-08d67a082d36">
+    <name>ФормаОтчета2022Кв2УФ_ПриложениеКЦП</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета2022 кв2 у ф приложение КЦП</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма отчета2022 кв2 у ф приложение КЦП</value>
+    </synonym>
+  </templates>
+  <templates uuid="03897647-d316-4ef4-8983-deb7ed6e68b1">
+    <name>ФормаОтчета2022Кв2УФ_ПриложениеМПЗ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета2022 кв2 у ф приложение МПЗ</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма отчета2022 кв2 у ф приложение МПЗ</value>
+    </synonym>
+  </templates>
+  <templates uuid="fde19410-82a4-4e90-9690-50c6a6f8d832">
+    <name>ФормаОтчета2022Кв2УФ_ПриложениеМЗЗ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета2022 кв2 у ф приложение МЗЗ</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма отчета2022 кв2 у ф приложение МЗЗ</value>
+    </synonym>
+  </templates>
+  <templates uuid="352d1b0d-3e9c-407b-b217-b43b9495d111">
+    <name>ФормаОтчета2022Кв2УФ_СлужебныеДанные</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета2022 кв2 у ф служебные данные</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма отчета2022 кв2 у ф служебные данные</value>
+    </synonym>
+  </templates>
+  <templates uuid="4229e351-b3f5-4bda-b573-eb28fee28a75">
+    <name>СоставПоказателей2023Кв1УФ</name>
+    <synonym>
+      <key>ru</key>
+      <value>СоставПоказателей</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>СоставПоказателей</value>
+    </synonym>
+  </templates>
+  <templates uuid="6a9d8006-20cc-4127-9cc5-7503bcd27ee9">
+    <name>ФормаОтчета2023Кв1УФ_Декларация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета2023 кв1 у ф декларация</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма отчета2023 кв1 у ф декларация</value>
+    </synonym>
+  </templates>
+  <templates uuid="a3251ac7-1728-4c52-ab3a-d701544fe260">
+    <name>ФормаОтчета2023Кв1УФ_ПриложениеАВ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета2023 кв1 у ф приложение АВ</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма отчета2023 кв1 у ф приложение АВ</value>
+    </synonym>
+  </templates>
+  <templates uuid="f1bd6576-7cb8-4d46-89a5-94765e6abb16">
+    <name>ФормаОтчета2023Кв1УФ_ПриложениеЗП</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета2023 кв1 у ф приложение ЗП</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма отчета2023 кв1 у ф приложение ЗП</value>
+    </synonym>
+  </templates>
+  <templates uuid="a7a5dced-e022-4674-b182-ac5a3f34fad9">
+    <name>ФормаОтчета2023Кв1УФ_ПриложениеПН</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета2023 кв1 у ф приложение ПН</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма отчета2023 кв1 у ф приложение ПН</value>
+    </synonym>
+  </templates>
+  <templates uuid="ca7068f6-b874-43a4-9355-ebe5ef90f5d4">
+    <name>ФормаОтчета2023Кв1УФ_ПриложениеТЦ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета2023 кв1 у ф приложение ТЦ</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма отчета2023 кв1 у ф приложение ТЦ</value>
+    </synonym>
+  </templates>
+  <templates uuid="f9206c61-67e0-4e53-bca6-ec30575b0809">
+    <name>ФормаОтчета2023Кв1УФ_ПриложениеВП</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета2023 кв1 у ф приложение ВП</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма отчета2023 кв1 у ф приложение ВП</value>
+    </synonym>
+  </templates>
+  <templates uuid="138de80c-5c81-4de9-9901-ae42fd961dd3">
+    <name>ФормаОтчета2023Кв1УФ_ПриложениеРИ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета2023 кв1 у ф приложение РИ</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма отчета2023 кв1 у ф приложение РИ</value>
+    </synonym>
+  </templates>
+  <templates uuid="1f48b202-4487-4c1b-8ac9-3286324d2c78">
+    <name>ФормаОтчета2023Кв1УФ_ПриложениеПЗ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета2023 кв1 у ф приложение ПЗ</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма отчета2023 кв1 у ф приложение ПЗ</value>
+    </synonym>
+  </templates>
+  <templates uuid="de9ef5df-46cf-43c9-a888-80460f887371">
+    <name>ФормаОтчета2023Кв1УФ_ПриложениеАМ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета2023 кв1 у ф приложение АМ</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма отчета2023 кв1 у ф приложение АМ</value>
+    </synonym>
+  </templates>
+  <templates uuid="aa241266-30b7-43db-8c47-27d1a8388859">
+    <name>ФормаОтчета2023Кв1УФ_ПриложениеЦП</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета2023 кв1 у ф приложение ЦП</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма отчета2023 кв1 у ф приложение ЦП</value>
+    </synonym>
+  </templates>
+  <templates uuid="911e4fd2-8c0d-47c6-beef-33823b0d6ac8">
+    <name>ФормаОтчета2023Кв1УФ_ПриложениеПП</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета2023 кв1 у ф приложение ПП</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма отчета2023 кв1 у ф приложение ПП</value>
+    </synonym>
+  </templates>
+  <templates uuid="fe0cb365-700e-41af-aaf0-41deeee65cb8">
+    <name>ФормаОтчета2023Кв1УФ_ПриложениеКИК</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета2023 кв1 у ф приложение КИК</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма отчета2023 кв1 у ф приложение КИК</value>
+    </synonym>
+  </templates>
+  <templates uuid="f6b3f6e3-8e1e-412e-96a9-7f3f84a493a4">
+    <name>ФормаОтчета2023Кв1УФ_ПриложениеМПЗ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета2023 кв1 у ф приложение МПЗ</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма отчета2023 кв1 у ф приложение МПЗ</value>
+    </synonym>
+  </templates>
+  <templates uuid="e0dd10e3-2f73-4aef-be65-a14fa19ebc58">
+    <name>ФормаОтчета2023Кв1УФ_ПриложениеМЗЗ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета2023 кв1 у ф приложение МЗЗ</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма отчета2023 кв1 у ф приложение МЗЗ</value>
+    </synonym>
+  </templates>
+  <templates uuid="8382a9e7-96b1-4c1a-8571-f45b727aef54">
+    <name>ФормаОтчета2023Кв1УФ_ПриложениеДИЯ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета2023 кв1 у ф приложение ДИЯ</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма отчета2023 кв1 у ф приложение ДИЯ</value>
+    </synonym>
+  </templates>
+  <templates uuid="8ec3d23c-d33f-42b5-a059-da15e8c5e1bd">
+    <name>ФормаОтчета2023Кв1УФ_СлужебныеДанные</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета2023 кв1 у ф служебные данные</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма отчета2023 кв1 у ф служебные данные</value>
+    </synonym>
+  </templates>
+  <templates uuid="465247ab-3305-43b0-975a-e5973da4750f">
+    <name>СоставПоказателей2023Кв2УФ</name>
+    <synonym>
+      <key>ru</key>
+      <value>СоставПоказателей</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>СоставПоказателей</value>
+    </synonym>
+  </templates>
+  <templates uuid="be68a8e5-40e7-496b-9d6d-d006e941da96">
+    <name>ФормаОтчета2023Кв2УФ_Декларация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета2023 кв2 у ф декларация</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма отчета2023 кв2 у ф декларация</value>
+    </synonym>
+  </templates>
+  <templates uuid="5b10d66f-1c7c-40c3-9af7-2683db0bd539">
+    <name>ФормаОтчета2023Кв2УФ_ПриложениеАВ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета2023 кв2 у ф приложение АВ</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма отчета2023 кв2 у ф приложение АВ</value>
+    </synonym>
+  </templates>
+  <templates uuid="9d962470-7b9b-4d87-b8a9-1e5d278ae04b">
+    <name>ФормаОтчета2023Кв2УФ_ПриложениеЗП</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета2023 кв2 у ф приложение ЗП</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма отчета2023 кв2 у ф приложение ЗП</value>
+    </synonym>
+  </templates>
+  <templates uuid="b467cd9a-8b03-452f-9351-229aa24c0f7f">
+    <name>ФормаОтчета2023Кв2УФ_ПриложениеПН</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета2023 кв2 у ф приложение ПН</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма отчета2023 кв2 у ф приложение ПН</value>
+    </synonym>
+  </templates>
+  <templates uuid="6939ee05-88bb-46f3-a773-265bb81023bb">
+    <name>ФормаОтчета2023Кв2УФ_ПриложениеТЦ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета2023 кв2 у ф приложение ТЦ</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма отчета2023 кв2 у ф приложение ТЦ</value>
+    </synonym>
+  </templates>
+  <templates uuid="88eda27f-af50-46be-89fd-03b239932733">
+    <name>ФормаОтчета2023Кв2УФ_ПриложениеВП</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета2023 кв2 у ф приложение ВП</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма отчета2023 кв2 у ф приложение ВП</value>
+    </synonym>
+  </templates>
+  <templates uuid="e4ac4b7e-567e-4959-9fad-15c4bd7b4f0e">
+    <name>ФормаОтчета2023Кв2УФ_ПриложениеРИ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета2023 кв2 у ф приложение РИ</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма отчета2023 кв2 у ф приложение РИ</value>
+    </synonym>
+  </templates>
+  <templates uuid="4b0a4d97-9428-4e98-9b2f-008454987b99">
+    <name>ФормаОтчета2023Кв2УФ_ПриложениеПЗ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета2023 кв2 у ф приложение ПЗ</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма отчета2023 кв2 у ф приложение ПЗ</value>
+    </synonym>
+  </templates>
+  <templates uuid="2d2606b4-b5e2-4130-be15-39ab7be14877">
+    <name>ФормаОтчета2023Кв2УФ_ПриложениеАМ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета2023 кв2 у ф приложение АМ</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма отчета2023 кв2 у ф приложение АМ</value>
+    </synonym>
+  </templates>
+  <templates uuid="e6be6fa1-ad29-4873-b8d6-2154eaca7d3c">
+    <name>ФормаОтчета2023Кв2УФ_ПриложениеЦП</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета2023 кв2 у ф приложение ЦП</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма отчета2023 кв2 у ф приложение ЦП</value>
+    </synonym>
+  </templates>
+  <templates uuid="2f070e38-3c41-450d-ba1d-98757d031737">
+    <name>ФормаОтчета2023Кв2УФ_ПриложениеПП</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета2023 кв2 у ф приложение ПП</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма отчета2023 кв2 у ф приложение ПП</value>
+    </synonym>
+  </templates>
+  <templates uuid="fbb9aa5f-f729-4ca1-b7c1-2cfa3e322e40">
+    <name>ФормаОтчета2023Кв2УФ_ПриложениеКИК</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета2023 кв2 у ф приложение КИК</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма отчета2023 кв2 у ф приложение КИК</value>
+    </synonym>
+  </templates>
+  <templates uuid="927e1b8e-a49f-41eb-8e1d-73d0d75718f4">
+    <name>ФормаОтчета2023Кв2УФ_ПриложениеМПЗ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета2023 кв2 у ф приложение МПЗ</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма отчета2023 кв2 у ф приложение МПЗ</value>
+    </synonym>
+  </templates>
+  <templates uuid="48f9125e-e41b-4e8d-b231-1fb4a66df1e9">
+    <name>ФормаОтчета2023Кв2УФ_ПриложениеМЗЗ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета2023 кв2 у ф приложение МЗЗ</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма отчета2023 кв2 у ф приложение МЗЗ</value>
+    </synonym>
+  </templates>
+  <templates uuid="4e16132e-5cc4-4a77-bae3-e465c3092acb">
+    <name>ФормаОтчета2023Кв2УФ_ПриложениеДИЯ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета2023 кв2 у ф приложение ДИЯ</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма отчета2023 кв2 у ф приложение ДИЯ</value>
+    </synonym>
+  </templates>
+  <templates uuid="3667df85-aeef-46de-be91-7c25ccc5e613">
+    <name>ФормаОтчета2023Кв2УФ_ПриложениеОВ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета2023 кв2 у ф приложение ОВ</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма отчета2023 кв2 у ф приложение ОВ</value>
+    </synonym>
+  </templates>
+  <templates uuid="7647c603-70c9-4e82-bdd5-e9bf122db8af">
+    <name>ФормаОтчета2023Кв2УФ_СлужебныеДанные</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета2023 кв2 у ф служебные данные</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма отчета2023 кв2 у ф служебные данные</value>
+    </synonym>
+  </templates>
+  <templates uuid="f783b33c-c7ce-4767-97ab-09bd9f2afb95">
+    <name>СоставПоказателей2023Кв4УФ</name>
+    <synonym>
+      <key>ru</key>
+      <value>СоставПоказателей</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>СоставПоказателей</value>
+    </synonym>
+  </templates>
+  <templates uuid="d92f9cfb-b670-4706-aa0a-1f0fdd381a43">
+    <name>ФормаОтчета2023Кв4УФ_Декларация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета2023 кв4 у ф декларация</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма отчета2023 кв4 у ф декларация</value>
+    </synonym>
+  </templates>
+  <templates uuid="a5d57ffb-d7b2-4b73-9444-1e93b2377e28">
+    <name>ФормаОтчета2023Кв4УФ_ПриложениеАВ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета2023 кв4 у ф приложение АВ</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма отчета2023 кв4 у ф приложение АВ</value>
+    </synonym>
+  </templates>
+  <templates uuid="87ab8a5d-405b-470b-96c3-770ba87dca9d">
+    <name>ФормаОтчета2023Кв4УФ_ПриложениеЗП</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета2023 кв4 у ф приложение ЗП</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма отчета2023 кв4 у ф приложение ЗП</value>
+    </synonym>
+  </templates>
+  <templates uuid="383afe87-f208-410d-9e0c-2ca23e1e0e96">
+    <name>ФормаОтчета2023Кв4УФ_ПриложениеПН</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета2023 кв4 у ф приложение ПН</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма отчета2023 кв4 у ф приложение ПН</value>
+    </synonym>
+  </templates>
+  <templates uuid="9df931de-1659-4415-bfe7-5aa12747ea09">
+    <name>ФормаОтчета2023Кв4УФ_ПриложениеТЦ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета2023 кв4 у ф приложение ТЦ</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма отчета2023 кв4 у ф приложение ТЦ</value>
+    </synonym>
+  </templates>
+  <templates uuid="a98eb8d4-aeab-41c4-ab04-2f06526af59a">
+    <name>ФормаОтчета2023Кв4УФ_ПриложениеВП</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета2023 кв4 у ф приложение ВП</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма отчета2023 кв4 у ф приложение ВП</value>
+    </synonym>
+  </templates>
+  <templates uuid="5f5a55bd-c4bd-46a3-9f65-4ca7cf3125b8">
+    <name>ФормаОтчета2023Кв4УФ_ПриложениеРИ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета2023 кв4 у ф приложение РИ</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма отчета2023 кв4 у ф приложение РИ</value>
+    </synonym>
+  </templates>
+  <templates uuid="5453d637-a228-4d21-9431-3616d2ca2f49">
+    <name>ФормаОтчета2023Кв4УФ_ПриложениеПЗ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета2023 кв4 у ф приложение ПЗ</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма отчета2023 кв4 у ф приложение ПЗ</value>
+    </synonym>
+  </templates>
+  <templates uuid="0a7f2c00-d046-4c86-a798-ba732f12d7c1">
+    <name>ФормаОтчета2023Кв4УФ_ПриложениеАМ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета2023 кв4 у ф приложение АМ</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма отчета2023 кв4 у ф приложение АМ</value>
+    </synonym>
+  </templates>
+  <templates uuid="2c064f87-0ac7-434c-9647-1421cff3c2c3">
+    <name>ФормаОтчета2023Кв4УФ_ПриложениеЦП</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета2023 кв4 у ф приложение ЦП</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма отчета2023 кв4 у ф приложение ЦП</value>
+    </synonym>
+  </templates>
+  <templates uuid="9025e816-81a9-45c2-a768-79e341f2b1f7">
+    <name>ФормаОтчета2023Кв4УФ_ПриложениеПП</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета2023 кв4 у ф приложение ПП</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма отчета2023 кв4 у ф приложение ПП</value>
+    </synonym>
+  </templates>
+  <templates uuid="6c27e504-8dfc-49a0-8df7-c79567092a5a">
+    <name>ФормаОтчета2023Кв4УФ_ПриложениеКИК</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета2023 кв4 у ф приложение КИК</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма отчета2023 кв4 у ф приложение КИК</value>
+    </synonym>
+  </templates>
+  <templates uuid="12d1ccfd-3b9f-4268-a9fe-61296ac9400a">
+    <name>ФормаОтчета2023Кв4УФ_ПриложениеМПЗ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета2023 кв4 у ф приложение МПЗ</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма отчета2023 кв4 у ф приложение МПЗ</value>
+    </synonym>
+  </templates>
+  <templates uuid="ada6aec3-491d-4edc-bb0b-3b6f4a2a4df7">
+    <name>ФормаОтчета2023Кв4УФ_ПриложениеМЗЗ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета2023 кв4 у ф приложение МЗЗ</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма отчета2023 кв4 у ф приложение МЗЗ</value>
+    </synonym>
+  </templates>
+  <templates uuid="b298b19d-66da-4514-87a5-484603f6146c">
+    <name>ФормаОтчета2023Кв4УФ_ПриложениеДИЯ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета2023 кв4 у ф приложение ДИЯ</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма отчета2023 кв4 у ф приложение ДИЯ</value>
+    </synonym>
+  </templates>
+  <templates uuid="49a776da-c8e2-4121-9caf-6d91aa60b892">
+    <name>ФормаОтчета2023Кв4УФ_ПриложениеОВ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета2023 кв4 у ф приложение ОВ</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма отчета2023 кв4 у ф приложение ОВ</value>
+    </synonym>
+  </templates>
+  <templates uuid="72097db8-2c9f-4cf2-bd50-21d8cd81bb4d">
+    <name>ФормаОтчета2023Кв4УФ_СлужебныеДанные</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета2023 кв4 у ф служебные данные</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма отчета2023 кв4 у ф служебные данные</value>
+    </synonym>
+  </templates>
+  <templates uuid="a6c1b0d2-48d0-4aef-a628-3552d6623694">
+    <name>СоставПоказателей2024Кв2УФ</name>
+    <synonym>
+      <key>ru</key>
+      <value>СоставПоказателей</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>СоставПоказателей</value>
+    </synonym>
+  </templates>
+  <templates uuid="55e584e8-10c8-439c-a838-6cd3ada86b0c">
+    <name>ФормаОтчета2024Кв2УФ_Декларация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета2024 кв2 у ф декларация</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма отчета2024 кв2 у ф декларация</value>
+    </synonym>
+  </templates>
+  <templates uuid="cb4ca028-b59a-4ce9-804f-01c0dc904117">
+    <name>ФормаОтчета2024Кв2УФ_ПриложениеАВ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета2024 кв2 у ф приложение АВ</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма отчета2024 кв2 у ф приложение АВ</value>
+    </synonym>
+  </templates>
+  <templates uuid="e888d483-ba8a-4f9f-b7c7-d6d51ba7a4d5">
+    <name>ФормаОтчета2024Кв2УФ_ПриложениеЗП</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета2024 кв2 у ф приложение ЗП</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма отчета2024 кв2 у ф приложение ЗП</value>
+    </synonym>
+  </templates>
+  <templates uuid="481b2559-f1f9-4d3a-9648-0e994e469c89">
+    <name>ФормаОтчета2024Кв2УФ_ПриложениеПН</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета2024 кв2 у ф приложение ПН</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма отчета2024 кв2 у ф приложение ПН</value>
+    </synonym>
+  </templates>
+  <templates uuid="89fed044-8437-42b8-92ce-f3a59d907a0c">
+    <name>ФормаОтчета2024Кв2УФ_ПриложениеТЦ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета2024 кв2 у ф приложение ТЦ</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма отчета2024 кв2 у ф приложение ТЦ</value>
+    </synonym>
+  </templates>
+  <templates uuid="433c1724-7f42-4917-bcdd-860314b62242">
+    <name>ФормаОтчета2024Кв2УФ_ПриложениеВП</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета2024 кв2 у ф приложение ВП</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма отчета2024 кв2 у ф приложение ВП</value>
+    </synonym>
+  </templates>
+  <templates uuid="a2289bb9-8fda-4318-bc65-42c317bd7c18">
+    <name>ФормаОтчета2024Кв2УФ_ПриложениеРИ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета2024 кв2 у ф приложение РИ</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма отчета2024 кв2 у ф приложение РИ</value>
+    </synonym>
+  </templates>
+  <templates uuid="5d998b9f-45e9-4694-b1ea-a1841ad83940">
+    <name>ФормаОтчета2024Кв2УФ_ПриложениеПЗ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета2024 кв2 у ф приложение ПЗ</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма отчета2024 кв2 у ф приложение ПЗ</value>
+    </synonym>
+  </templates>
+  <templates uuid="1a49fca0-eaba-40c6-967f-1d789e2d011e">
+    <name>ФормаОтчета2024Кв2УФ_ПриложениеАМ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета2024 кв2 у ф приложение АМ</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма отчета2024 кв2 у ф приложение АМ</value>
+    </synonym>
+  </templates>
+  <templates uuid="b98f1b44-8136-4917-bf87-ba225176e7ab">
+    <name>ФормаОтчета2024Кв2УФ_ПриложениеЦП</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета2024 кв2 у ф приложение ЦП</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма отчета2024 кв2 у ф приложение ЦП</value>
+    </synonym>
+  </templates>
+  <templates uuid="6108d4b0-7f2d-4c0e-be85-d9c86e5e2c5b">
+    <name>ФормаОтчета2024Кв2УФ_ПриложениеПП</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета2024 кв2 у ф приложение ПП</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма отчета2024 кв2 у ф приложение ПП</value>
+    </synonym>
+  </templates>
+  <templates uuid="ff1d3d45-c765-4111-bb4e-6133fdb7ddf1">
+    <name>ФормаОтчета2024Кв2УФ_ПриложениеКИК</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета2024 кв2 у ф приложение КИК</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма отчета2024 кв2 у ф приложение КИК</value>
+    </synonym>
+  </templates>
+  <templates uuid="e0a9bdbc-e641-4b10-80c1-d91a0082661e">
+    <name>ФормаОтчета2024Кв2УФ_ПриложениеМПЗ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета2024 кв2 у ф приложение МПЗ</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма отчета2024 кв2 у ф приложение МПЗ</value>
+    </synonym>
+  </templates>
+  <templates uuid="4870cfbe-279a-4b76-8c57-43d88f2f31a4">
+    <name>ФормаОтчета2024Кв2УФ_ПриложениеМЗЗ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета2024 кв2 у ф приложение МЗЗ</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма отчета2024 кв2 у ф приложение МЗЗ</value>
+    </synonym>
+  </templates>
+  <templates uuid="de0f20da-9cde-42f8-bccd-26bc0a80ba62">
+    <name>ФормаОтчета2024Кв2УФ_ПриложениеДИЯ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета2024 кв2 у ф приложение ДИЯ</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма отчета2024 кв2 у ф приложение ДИЯ</value>
+    </synonym>
+  </templates>
+  <templates uuid="d8587e4f-0a95-49e9-8e22-e93ac8569cc2">
+    <name>ФормаОтчета2024Кв2УФ_ПриложениеОВ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета2024 кв2 у ф приложение ОВ</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма отчета2024 кв2 у ф приложение ОВ</value>
+    </synonym>
+  </templates>
+  <templates uuid="f79c2701-665b-4ffe-adcd-18799097a438">
+    <name>ФормаОтчета2024Кв2УФ_СлужебныеДанные</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета2024 кв2 у ф служебные данные</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма отчета2024 кв2 у ф служебные данные</value>
+    </synonym>
+  </templates>
+  <templates uuid="6762c292-3cd0-4811-927b-aa71ba2e83b6">
+    <name>СоставПоказателей2025Кв2УФ</name>
+    <synonym>
+      <key>ru</key>
+      <value>СоставПоказателей</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>СоставПоказателей</value>
+    </synonym>
+  </templates>
+  <templates uuid="0e436c83-34f8-4757-8918-f58f74514cdf">
+    <name>ФормаОтчета2025Кв2УФ_Декларация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета2025 кв2 у ф декларация</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма отчета2025 кв2 у ф декларация</value>
+    </synonym>
+  </templates>
+  <templates uuid="b598b200-2635-4ced-bd37-8c8a6e1655ae">
+    <name>ФормаОтчета2025Кв2УФ_ПриложениеАВ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета2025 кв2 у ф приложение АВ</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма отчета2025 кв2 у ф приложение АВ</value>
+    </synonym>
+  </templates>
+  <templates uuid="24115a7b-a5eb-4c3f-bff8-1a69b7fa72ea">
+    <name>ФормаОтчета2025Кв2УФ_ПриложениеЗП</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета2025 кв2 у ф приложение ЗП</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма отчета2025 кв2 у ф приложение ЗП</value>
+    </synonym>
+  </templates>
+  <templates uuid="5168f6ba-da56-4a4e-8c4d-3c4c4e97b44f">
+    <name>ФормаОтчета2025Кв2УФ_ПриложениеПН</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета2025 кв2 у ф приложение ПН</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма отчета2025 кв2 у ф приложение ПН</value>
+    </synonym>
+  </templates>
+  <templates uuid="1450a8d6-55f8-45b7-88fd-48dc894ae407">
+    <name>ФормаОтчета2025Кв2УФ_ПриложениеТЦ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета2025 кв2 у ф приложение ТЦ</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма отчета2025 кв2 у ф приложение ТЦ</value>
+    </synonym>
+  </templates>
+  <templates uuid="9ddf9be0-7a65-4f93-99e7-83be27965717">
+    <name>ФормаОтчета2025Кв2УФ_ПриложениеВП</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета2025 кв2 у ф приложение ВП</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма отчета2025 кв2 у ф приложение ВП</value>
+    </synonym>
+  </templates>
+  <templates uuid="165c6dc5-a4d6-4ae3-8b3e-42cf3497b38f">
+    <name>ФормаОтчета2025Кв2УФ_ПриложениеРИ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета2025 кв2 у ф приложение РИ</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма отчета2025 кв2 у ф приложение РИ</value>
+    </synonym>
+  </templates>
+  <templates uuid="8679b17c-bf71-4ed5-a7d4-488b39b9b14d">
+    <name>ФормаОтчета2025Кв2УФ_ПриложениеПЗ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета2025 кв2 у ф приложение ПЗ</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма отчета2025 кв2 у ф приложение ПЗ</value>
+    </synonym>
+  </templates>
+  <templates uuid="5eb2947c-d280-4e24-816b-b84a51be2ebc">
+    <name>ФормаОтчета2025Кв2УФ_ПриложениеАМ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета2025 кв2 у ф приложение АМ</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма отчета2025 кв2 у ф приложение АМ</value>
+    </synonym>
+  </templates>
+  <templates uuid="2fa728ad-0716-489e-91d8-b04471f75514">
+    <name>ФормаОтчета2025Кв2УФ_ПриложениеЦП</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета2025 кв2 у ф приложение ЦП</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма отчета2025 кв2 у ф приложение ЦП</value>
+    </synonym>
+  </templates>
+  <templates uuid="3435a95c-8d2f-4914-a0fb-48e5385a983d">
+    <name>ФормаОтчета2025Кв2УФ_ПриложениеПП</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета2025 кв2 у ф приложение ПП</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма отчета2025 кв2 у ф приложение ПП</value>
+    </synonym>
+  </templates>
+  <templates uuid="75cf1a06-318c-497e-848a-45cef16d0187">
+    <name>ФормаОтчета2025Кв2УФ_ПриложениеКИК</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета2025 кв2 у ф приложение КИК</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма отчета2025 кв2 у ф приложение КИК</value>
+    </synonym>
+  </templates>
+  <templates uuid="c7e915cb-e84e-49e1-be72-3ed5ff5eae5e">
+    <name>ФормаОтчета2025Кв2УФ_ПриложениеМПЗ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета2025 кв2 у ф приложение МПЗ</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма отчета2025 кв2 у ф приложение МПЗ</value>
+    </synonym>
+  </templates>
+  <templates uuid="893e26ea-2cdc-48e5-994c-22f84c90afa0">
+    <name>ФормаОтчета2025Кв2УФ_ПриложениеМЗЗ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета2025 кв2 у ф приложение МЗЗ</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма отчета2025 кв2 у ф приложение МЗЗ</value>
+    </synonym>
+  </templates>
+  <templates uuid="8e3babc4-a77e-47b0-8d4b-ef0c3d870c68">
+    <name>ФормаОтчета2025Кв2УФ_ПриложениеДИЯ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета2025 кв2 у ф приложение ДИЯ</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма отчета2025 кв2 у ф приложение ДИЯ</value>
+    </synonym>
+  </templates>
+  <templates uuid="d130311f-f0bf-483b-b304-14d51272916c">
+    <name>ФормаОтчета2025Кв2УФ_ПриложениеЩАВ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета2025 кв2 у ф приложение ЩАВ</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма отчета2025 кв2 у ф приложение ЩАВ</value>
+    </synonym>
+  </templates>
+  <templates uuid="e7245695-1b91-4683-90cf-ba12b19dfbd9">
+    <name>ФормаОтчета2025Кв2УФ_СлужебныеДанные</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета2025 кв2 у ф служебные данные</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма отчета2025 кв2 у ф служебные данные</value>
+    </synonym>
+  </templates>
+  <templates uuid="61807309-96e8-4504-8c07-06d142d816d6">
+    <name>СоставПоказателей2025Кв3УФ</name>
+    <synonym>
+      <key>ru</key>
+      <value>СоставПоказателей</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Состав показателей2025 кв3 УФ</value>
+    </synonym>
+  </templates>
+  <templates uuid="ea9ad85c-9fda-4936-8842-41cc5159fd27">
+    <name>ФормаОтчета2025Кв3УФ_Декларация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета2025 кв3 у ф декларация</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма отчета2025 кв3 у ф декларация</value>
+    </synonym>
+  </templates>
+  <templates uuid="1078a5f4-780b-465f-b4cb-82f6efac8923">
+    <name>ФормаОтчета2025Кв3УФ_ПриложениеАВ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета2025 кв3 у ф приложение АВ</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма отчета2025 кв3 у ф приложение АВ</value>
+    </synonym>
+  </templates>
+  <templates uuid="637757ae-423c-4d09-8bd1-4f75d0369c81">
+    <name>ФормаОтчета2025Кв3УФ_ПриложениеЗП</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета2025 кв3 у ф приложение ЗП</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма отчета2025 кв3 у ф приложение ЗП</value>
+    </synonym>
+  </templates>
+  <templates uuid="04721b64-e769-4a4b-b46d-21e2937e24fb">
+    <name>ФормаОтчета2025Кв3УФ_ПриложениеПН</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета2025 кв3 у ф приложение ПН</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма отчета2025 кв3 у ф приложение ПН</value>
+    </synonym>
+  </templates>
+  <templates uuid="a8c3eda7-3f24-4aa2-8e0a-736b0bca2b72">
+    <name>ФормаОтчета2025Кв3УФ_ПриложениеТЦ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета2025 кв3 у ф приложение ТЦ</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма отчета2025 кв3 у ф приложение ТЦ</value>
+    </synonym>
+  </templates>
+  <templates uuid="52c6ebc0-a005-4a68-a1c5-5b99e2479f13">
+    <name>ФормаОтчета2025Кв3УФ_ПриложениеВП</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета2025 кв3 у ф приложение ВП</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма отчета2025 кв3 у ф приложение ВП</value>
+    </synonym>
+  </templates>
+  <templates uuid="9ba7cf4a-a948-49b1-8166-87c8ecc2a348">
+    <name>ФормаОтчета2025Кв3УФ_ПриложениеРИ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета2025 кв3 у ф приложение РИ</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма отчета2025 кв3 у ф приложение РИ</value>
+    </synonym>
+  </templates>
+  <templates uuid="00e41ac0-c6fc-44b9-996e-b869b71d0685">
+    <name>ФормаОтчета2025Кв3УФ_ПриложениеПЗ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета2025 кв3 у ф приложение ПЗ</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма отчета2025 кв3 у ф приложение ПЗ</value>
+    </synonym>
+  </templates>
+  <templates uuid="13e51fde-4305-4a4b-8fde-53de67749ab5">
+    <name>ФормаОтчета2025Кв3УФ_ПриложениеАМ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета2025 кв3 у ф приложение АМ</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма отчета2025 кв3 у ф приложение АМ</value>
+    </synonym>
+  </templates>
+  <templates uuid="24d5fcac-a96e-44db-a158-d3f2f015066c">
+    <name>ФормаОтчета2025Кв3УФ_ПриложениеЦП</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета2025 кв3 у ф приложение ЦП</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма отчета2025 кв3 у ф приложение ЦП</value>
+    </synonym>
+  </templates>
+  <templates uuid="462fb353-db8d-4b8f-b5cb-0882eb07b6bb">
+    <name>ФормаОтчета2025Кв3УФ_ПриложениеПП</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета2025 кв3 у ф приложение ПП</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма отчета2025 кв3 у ф приложение ПП</value>
+    </synonym>
+  </templates>
+  <templates uuid="0504c76a-923c-4a5b-aa38-b55eb46e96c6">
+    <name>ФормаОтчета2025Кв3УФ_ПриложениеКИК</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета2025 кв3 у ф приложение КИК</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма отчета2025 кв3 у ф приложение КИК</value>
+    </synonym>
+  </templates>
+  <templates uuid="a4d05dc0-96fe-4242-952c-9fb6948abc8b">
+    <name>ФормаОтчета2025Кв3УФ_ПриложениеМПЗ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета2025 кв3 у ф приложение МПЗ</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма отчета2025 кв3 у ф приложение МПЗ</value>
+    </synonym>
+  </templates>
+  <templates uuid="2731f677-0e48-4cb2-9f23-fee148de0e8b">
+    <name>ФормаОтчета2025Кв3УФ_ПриложениеМЗЗ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета2025 кв3 у ф приложение МЗЗ</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма отчета2025 кв3 у ф приложение МЗЗ</value>
+    </synonym>
+  </templates>
+  <templates uuid="eed3c3ec-787f-4acc-ac8e-cc43383105a0">
+    <name>ФормаОтчета2025Кв3УФ_ПриложениеДИЯ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета2025 кв3 у ф приложение ДИЯ</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма отчета2025 кв3 у ф приложение ДИЯ</value>
+    </synonym>
+  </templates>
+  <templates uuid="d1c52de2-9782-4aee-9ed1-2769ceb9c645">
+    <name>ФормаОтчета2025Кв3УФ_ПриложениеЩАВ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета2025 кв3 у ф приложение ЩАВ</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма отчета2025 кв3 у ф приложение ЩАВ</value>
+    </synonym>
+  </templates>
+  <templates uuid="9721b3ba-c709-4d57-8415-0f39fb347fce">
+    <name>ФормаОтчета2025Кв3УФ_СлужебныеДанные</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета2025 кв3 у ф служебные данные</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма отчета2025 кв3 у ф служебные данные</value>
+    </synonym>
+  </templates>
+  <templates uuid="5befbb42-f0a0-4f6c-bec1-3345e0e8e4fb">
+    <name>СоставПоказателей2025Кв4УФ</name>
+    <synonym>
+      <key>ru</key>
+      <value>СоставПоказателей</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Состав показателей2025 кв4 УФ</value>
+    </synonym>
+  </templates>
+  <templates uuid="a04398a1-1f65-4402-9a59-fbc38badbfb4">
+    <name>ФормаОтчета2025Кв4УФ_Декларация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета2025 кв4 у ф декларация</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма отчета2025 кв4 у ф декларация</value>
+    </synonym>
+  </templates>
+  <templates uuid="930fec86-7cfb-4761-9a28-43aaba68e095">
+    <name>ФормаОтчета2025Кв4УФ_ПриложениеАВ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета2025 кв4 у ф приложение АВ</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма отчета2025 кв4 у ф приложение АВ</value>
+    </synonym>
+  </templates>
+  <templates uuid="2e838f8f-6861-4386-9b5e-78f14b0a29b8">
+    <name>ФормаОтчета2025Кв4УФ_ПриложениеЗП</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета2025 кв4 у ф приложение ЗП</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма отчета2025 кв4 у ф приложение ЗП</value>
+    </synonym>
+  </templates>
+  <templates uuid="c89ec992-2a63-451e-a15d-cbf613f40e76">
+    <name>ФормаОтчета2025Кв4УФ_ПриложениеПН</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета2025 кв4 у ф приложение ПН</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма отчета2025 кв4 у ф приложение ПН</value>
+    </synonym>
+  </templates>
+  <templates uuid="82ae2535-f6ca-44f7-80f5-b6e987772225">
+    <name>ФормаОтчета2025Кв4УФ_ПриложениеТЦ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета2025 кв4 у ф приложение ТЦ</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма отчета2025 кв4 у ф приложение ТЦ</value>
+    </synonym>
+  </templates>
+  <templates uuid="c5766d80-44fd-489c-8b05-34984637a14a">
+    <name>ФормаОтчета2025Кв4УФ_ПриложениеВП</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета2025 кв4 у ф приложение ВП</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма отчета2025 кв4 у ф приложение ВП</value>
+    </synonym>
+  </templates>
+  <templates uuid="6e0ca645-6612-4ca4-ab5f-406135ce8379">
+    <name>ФормаОтчета2025Кв4УФ_ПриложениеРИ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета2025 кв4 у ф приложение РИ</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма отчета2025 кв4 у ф приложение РИ</value>
+    </synonym>
+  </templates>
+  <templates uuid="43503dc8-814e-4989-ba35-3445abbe1646">
+    <name>ФормаОтчета2025Кв4УФ_ПриложениеПЗ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета2025 кв4 у ф приложение ПЗ</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма отчета2025 кв4 у ф приложение ПЗ</value>
+    </synonym>
+  </templates>
+  <templates uuid="64b2707c-0cbf-4d6f-98a5-f31898a22ee9">
+    <name>ФормаОтчета2025Кв4УФ_ПриложениеАМ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета2025 кв4 у ф приложение АМ</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма отчета2025 кв4 у ф приложение АМ</value>
+    </synonym>
+  </templates>
+  <templates uuid="cb5a4d68-e01c-4709-b90c-54917ed5f4ae">
+    <name>ФормаОтчета2025Кв4УФ_ПриложениеЦП</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета2025 кв4 у ф приложение ЦП</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма отчета2025 кв4 у ф приложение ЦП</value>
+    </synonym>
+  </templates>
+  <templates uuid="bdbbd1ce-27df-49e2-baeb-e8d86b91b87e">
+    <name>ФормаОтчета2025Кв4УФ_ПриложениеПП</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета2025 кв4 у ф приложение ПП</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма отчета2025 кв4 у ф приложение ПП</value>
+    </synonym>
+  </templates>
+  <templates uuid="97ba3ee6-65da-47da-b6f9-3982260a52e5">
+    <name>ФормаОтчета2025Кв4УФ_ПриложениеКИК</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета2025 кв4 у ф приложение КИК</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма отчета2025 кв4 у ф приложение КИК</value>
+    </synonym>
+  </templates>
+  <templates uuid="cb293f52-0bb1-4a41-abc0-d65d700d64c9">
+    <name>ФормаОтчета2025Кв4УФ_ПриложениеМПЗ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета2025 кв4 у ф приложение МПЗ</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма отчета2025 кв4 у ф приложение МПЗ</value>
+    </synonym>
+  </templates>
+  <templates uuid="5ebfdae1-3458-46c5-8f93-aa16db30e2f4">
+    <name>ФормаОтчета2025Кв4УФ_ПриложениеМЗЗ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета2025 кв4 у ф приложение МЗЗ</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма отчета2025 кв4 у ф приложение МЗЗ</value>
+    </synonym>
+  </templates>
+  <templates uuid="f722895e-fc02-40a9-ae08-eaa69571983d">
+    <name>ФормаОтчета2025Кв4УФ_ПриложениеДИЯ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета2025 кв4 у ф приложение ДИЯ</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма отчета2025 кв4 у ф приложение ДИЯ</value>
+    </synonym>
+  </templates>
+  <templates uuid="5e8a8777-d44e-4cc7-84fa-52657a54f379">
+    <name>ФормаОтчета2025Кв4УФ_ПриложениеЩАВ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета2025 кв4 у ф приложение ЩАВ</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма отчета2025 кв4 у ф приложение ЩАВ</value>
+    </synonym>
+  </templates>
+  <templates uuid="853ab0c5-aaef-475f-9089-5f89e6e2be99">
+    <name>ФормаОтчета2025Кв4УФ_ПриложениеБД</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета2025 кв4 у ф приложение БД</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма отчета2025 кв4 у ф приложение БД</value>
+    </synonym>
+  </templates>
+  <templates uuid="8f74ae0a-4956-4698-b940-8c890ea073ff">
+    <name>ФормаОтчета2025Кв4УФ_СлужебныеДанные</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета2025 кв4 у ф служебные данные</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма отчета2025 кв4 у ф служебные данные</value>
+    </synonym>
+  </templates>
+</mdclass:Report>

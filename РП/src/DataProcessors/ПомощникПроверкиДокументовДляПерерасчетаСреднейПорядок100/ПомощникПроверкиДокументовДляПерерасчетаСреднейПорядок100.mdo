@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="26c3c570-b75e-435b-9570-8357ae7392e8">
+  <producedTypes>
+    <objectType typeId="498d4d77-8412-4b68-a06a-1435078025f8" valueTypeId="5e43fdf6-260c-4fc2-959d-87d81ca2c97d"/>
+    <managerType typeId="f5964356-250f-44ff-b5c3-c81f7e1362cb" valueTypeId="17c4ac23-f3b2-4260-af42-02e12505f311"/>
+  </producedTypes>
+  <name>ПомощникПроверкиДокументовДляПерерасчетаСреднейПорядок100</name>
+  <synonym>
+    <key>ru</key>
+    <value>Помощник проверки документов для перерасчета среднего заработка (Порядок 100)</value>
+  </synonym>
+  <synonym>
+    <key>uk</key>
+    <value>Помічник перевірки документів для перерахунку середнього заробітку (Порядок 100)</value>
+  </synonym>
+  <comment>Помощник проверки документов для перерасчета среднего заработка с учетом премий согласно Порядка 100</comment>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.ПомощникПроверкиДокументовДляПерерасчетаСреднейПорядок100.Form.Форма</defaultForm>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+    <pages>
+      <lang>uk</lang>
+    </pages>
+  </help>
+  <attributes uuid="e1203dca-af79-476c-818d-ebd97c9e18a3">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Організація</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+  </attributes>
+  <attributes uuid="f71457a7-5e97-4089-aa14-6208f1af456b">
+    <name>Период</name>
+    <synonym>
+      <key>ru</key>
+      <value>Период</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Період</value>
+    </synonym>
+    <type>
+      <types>StandardPeriod</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+  </attributes>
+  <forms uuid="13b54079-236e-40a2-ba4f-f16e099d56ce">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DataProcessor>

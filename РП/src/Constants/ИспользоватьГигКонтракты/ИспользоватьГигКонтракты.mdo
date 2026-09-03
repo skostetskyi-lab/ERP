@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="22d3b51c-dc8c-4f1c-bd74-f2f0ef5c01e6">
+  <producedTypes>
+    <managerType typeId="e7e15d6c-6316-46dc-8374-02c3ab299f8c" valueTypeId="fae45bad-1fa8-4b65-8f62-88b90dfb8423"/>
+    <valueManagerType typeId="fb4437c0-4874-4e31-855b-fee06db93be7" valueTypeId="e8d3d36e-0969-4a8f-9649-c6e6ab9cad6c"/>
+    <valueKeyType typeId="153531f5-cfa8-49f3-bd3b-0419b6c2f91c" valueTypeId="a5ffbf0e-1cda-4895-a777-da2fbc7ed2d5"/>
+  </producedTypes>
+  <name>ИспользоватьГигКонтракты</name>
+  <synonym>
+    <key>ru</key>
+    <value>Использовать гиг-контракты</value>
+  </synonym>
+  <synonym>
+    <key>uk</key>
+    <value>Використовувати гіг-контракти</value>
+  </synonym>
+  <type>
+    <types>Boolean</types>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

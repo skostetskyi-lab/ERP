@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="160aace1-d916-485c-9d81-e29a381e09b3">
+  <producedTypes>
+    <managerType typeId="34500dfa-ec14-4e31-b6e9-23bc465eb717" valueTypeId="93a7462d-9b98-4c81-9bbd-8201c99e2e4c"/>
+    <valueManagerType typeId="e03257cc-187b-4a26-97f9-c74831b5c98e" valueTypeId="ee946d96-dde5-4687-8f76-8d4aff15533e"/>
+    <valueKeyType typeId="0a5f0ee8-cd40-427a-9fee-0bdec7bd1b63" valueTypeId="b8ce41b8-2bdf-40f2-8255-f2b2690b0ee5"/>
+  </producedTypes>
+  <name>КратностьОкругленияСуммыНаличныхВЧеке</name>
+  <synonym>
+    <key>ru</key>
+    <value>Кратность округления суммы наличных в чеке</value>
+  </synonym>
+  <synonym>
+    <key>uk</key>
+    <value>Кратність заокруглення суми готівки в чеку</value>
+  </synonym>
+  <type>
+    <types>Number</types>
+    <numberQualifiers>
+      <precision>10</precision>
+      <scale>2</scale>
+      <nonNegative>true</nonNegative>
+    </numberQualifiers>
+  </type>
+  <toolTip>
+    <key>ru</key>
+    <value>Сумма кратно которой округляется сумма наличных в чеке согласно требований НБУ.
+Например, для округления до 50 коп. нужно указать &quot;0,5&quot;. Для округления до целых гривен - &quot;1&quot;.</value>
+  </toolTip>
+  <toolTip>
+    <key>uk</key>
+    <value>Сума кратно якій відбувається заокруглення суми готівки в чеку відповідно до вимог НБУ.
+Наприклад, для округлення до 50 коп. потрібно вказати &quot;0,5&quot;. Для округлення до цілих гривень - &quot;1&quot;.</value>
+  </toolTip>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

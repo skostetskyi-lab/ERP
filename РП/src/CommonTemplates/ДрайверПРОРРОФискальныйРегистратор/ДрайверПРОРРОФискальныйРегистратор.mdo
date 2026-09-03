@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonTemplate xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="a5310d96-a4dd-4496-922d-ec7caf6cab6a">
+  <name>ДрайверПРОРРОФискальныйРегистратор</name>
+  <synonym>
+    <key>ru</key>
+    <value>Драйвер РРО &quot;ПРОРРО&quot;</value>
+  </synonym>
+  <synonym>
+    <key>uk</key>
+    <value>Драйвер РРО &quot;ПРОРРО&quot;</value>
+  </synonym>
+  <templateType>AddIn</templateType>
+</mdclass:CommonTemplate>

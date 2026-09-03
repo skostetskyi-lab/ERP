@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="bb47ced2-31f9-4870-8633-20b986e53ccc">
+  <name>НеИспользоватьАдресныйКлассификатор</name>
+  <synonym>
+    <key>ru</key>
+    <value>Не использовать адресный классификатор</value>
+  </synonym>
+  <synonym>
+    <key>uk</key>
+    <value>Не використовувати адресний класифікатор</value>
+  </synonym>
+  <parentSubsystem>Subsystem.СтандартныеПодсистемы</parentSubsystem>
+</mdclass:Subsystem>

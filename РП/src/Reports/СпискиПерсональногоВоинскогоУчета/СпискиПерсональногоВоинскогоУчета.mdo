@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="fbc97094-e069-4318-b509-a465b82dd896">
+  <producedTypes>
+    <objectType typeId="6dcb97b6-5818-4fa9-9896-62a70342dcfe" valueTypeId="5c4d79ef-9108-4bb2-8975-6fabdb6d474e"/>
+    <managerType typeId="6546670d-7da5-4e65-832d-ca229ccd9153" valueTypeId="1a5435fd-66c7-4390-8c69-3b351083a068"/>
+  </producedTypes>
+  <name>СпискиПерсональногоВоинскогоУчета</name>
+  <synonym>
+    <key>ru</key>
+    <value>Списки персонального воинского учета</value>
+  </synonym>
+  <synonym>
+    <key>uk</key>
+    <value>Списки персонального військового обліку</value>
+  </synonym>
+  <mainDataCompositionSchema>Report.СпискиПерсональногоВоинскогоУчета.Template.СхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <variantsStorage>SettingsStorage.ХранилищеВариантовОтчетов</variantsStorage>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+    <pages>
+      <lang>uk</lang>
+    </pages>
+  </help>
+  <templates uuid="38e59431-913b-484b-8c1f-fa4e9576b121">
+    <name>СхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Схема компоновки данных</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Схема компонування даних</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+  <templates uuid="e8e00904-5ae0-445d-871d-80f07c5991f5">
+    <name>ПФ_MXL_UK_СпискиПерсональногоВоинскогоУчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Списки персонального воинского учета</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Списки персонального військового обліку</value>
+    </synonym>
+  </templates>
+  <templates uuid="84357a78-50d3-4974-b49f-50e89bccbfec">
+    <name>ПФ_MXL_UK_СпискиПерсональногоВоинскогоУчета_916</name>
+    <synonym>
+      <key>ru</key>
+      <value>Списки персонального воинского учета</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Списки персонального військового обліку</value>
+    </synonym>
+  </templates>
+</mdclass:Report>

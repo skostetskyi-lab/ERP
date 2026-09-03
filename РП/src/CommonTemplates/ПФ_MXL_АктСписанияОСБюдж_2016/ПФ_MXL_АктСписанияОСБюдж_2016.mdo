@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonTemplate xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="5dbbbd15-c54c-4b6c-ae63-79d62bba0793">
+  <name>ПФ_MXL_АктСписанияОСБюдж_2016</name>
+  <synonym>
+    <key>ru</key>
+    <value>Акт списания основных средств (частичной ликвидации)</value>
+  </synonym>
+  <synonym>
+    <key>uk</key>
+    <value>Акт списання основних засобів (часткової ліквідації)</value>
+  </synonym>
+</mdclass:CommonTemplate>

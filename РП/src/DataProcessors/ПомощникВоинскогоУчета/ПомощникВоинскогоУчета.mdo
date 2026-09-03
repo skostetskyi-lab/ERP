@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="d999fc89-fc2f-4c4a-a016-430ea31ef634">
+  <producedTypes>
+    <objectType typeId="5fca59ea-531d-402a-9b7c-f877c6dc4542" valueTypeId="b991aa2a-88c4-42c0-bd12-8984bb5cdaa5"/>
+    <managerType typeId="3a93f46a-f086-4ef0-b36c-ed14aa61a1f7" valueTypeId="5815d1b3-e942-4326-afc2-853a04c1496d"/>
+  </producedTypes>
+  <name>ПомощникВоинскогоУчета</name>
+  <synonym>
+    <key>ru</key>
+    <value>Помощник воинского учета</value>
+  </synonym>
+  <synonym>
+    <key>uk</key>
+    <value>Помічник військового обліку</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.ПомощникВоинскогоУчета.Form.Форма</defaultForm>
+  <forms uuid="dd52a8fa-53e9-45ce-bb6c-6f0688c9219f">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Помощник воинского учета</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Помічник військового обліку</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DataProcessor>

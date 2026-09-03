@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Role xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="6741708d-aada-4dc7-861c-cd27d8fbc6c7">
+  <name>ЧтениеРегистровИОтчетовПоАкцизномуНалогу</name>
+  <synonym>
+    <key>ru</key>
+    <value>Чтение регистров и отчетов по акцизному налогу</value>
+  </synonym>
+  <synonym>
+    <key>uk</key>
+    <value>Читання регістрів і звітів з акцизного податку</value>
+  </synonym>
+</mdclass:Role>

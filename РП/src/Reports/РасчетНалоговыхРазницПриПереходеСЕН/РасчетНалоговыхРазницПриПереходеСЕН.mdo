@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="fbb93d66-a49e-4062-b63d-3c30e89053a5">
+  <producedTypes>
+    <objectType typeId="177ebbc3-ca5b-4582-8f3d-ea5848b0b4a4" valueTypeId="25c8e332-2a1f-4075-893c-7beaab3c04ea"/>
+    <managerType typeId="67c93970-6cb1-4c99-a4ef-5c6f79526609" valueTypeId="216df49b-67c7-4cff-97f6-e4289ec3fee8"/>
+  </producedTypes>
+  <name>РасчетНалоговыхРазницПриПереходеСЕН</name>
+  <synonym>
+    <key>ru</key>
+    <value>Расчет налоговых разниц при переходе с ЕН</value>
+  </synonym>
+  <synonym>
+    <key>uk</key>
+    <value>Розрахунок податкових різниць під час переходу з ЄП</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.РасчетНалоговыхРазницПриПереходеСЕН.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <templates uuid="921e6fd6-8b8a-424a-a118-1b9e688a53fa">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Основна схема компонування даних</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

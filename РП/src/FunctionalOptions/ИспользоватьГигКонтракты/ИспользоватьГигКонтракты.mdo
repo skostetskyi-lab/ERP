@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:FunctionalOption xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="b3481fac-eeb0-4db7-bd40-d0f217993afe">
+  <name>ИспользоватьГигКонтракты</name>
+  <synonym>
+    <key>ru</key>
+    <value>Использовать гиг-контракты</value>
+  </synonym>
+  <synonym>
+    <key>uk</key>
+    <value>Використовувати гіг-контракти</value>
+  </synonym>
+  <location>Constant.ИспользоватьГигКонтракты</location>
+  <privilegedGetMode>true</privilegedGetMode>
+  <content>Enum.ВидыДоговоровССотрудниками</content>
+  <content>InformationRegister.КадроваяИсторияСотрудников.Resource.ВидДоговора</content>
+  <content>InformationRegister.КадроваяИсторияСотрудниковИспр.Resource.ВидДоговора</content>
+  <content>InformationRegister.КадроваяИсторияСотрудников.Resource.ВидДоговораПоОкончании</content>
+  <content>InformationRegister.КадроваяИсторияСотрудниковИспр.Resource.ВидДоговораПоОкончании</content>
+  <content>InformationRegister.ТекущиеКадровыеДанныеСотрудников.Resource.ТекущийВидДоговора</content>
+  <content>Document.ПриемНаРаботу.Attribute.ВидДоговора</content>
+  <content>Document.НачальнаяШтатнаяРасстановка.Attribute.ВидДоговора</content>
+  <content>Document.ПриемНаРаботуСписком.Attribute.ВидДоговора</content>
+  <content>Document.Увольнение.Attribute.ВидДоговора</content>
+  <content>Document.УвольнениеСписком.Attribute.ВидДоговора</content>
+  <content>Catalog.ВидыОтпусков.Attribute.ПредоставлятьОтпускВсемГигСпециалистам</content>
+  <content>Document.ТабельУчетаРабочегоВремени.Attribute.РежимЗаполненияПоВидуДоговора</content>
+</mdclass:FunctionalOption>

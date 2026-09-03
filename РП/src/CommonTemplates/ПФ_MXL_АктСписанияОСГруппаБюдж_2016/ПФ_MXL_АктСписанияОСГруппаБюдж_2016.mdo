@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonTemplate xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="2180abde-68a6-4af1-98a5-521968dff963">
+  <name>ПФ_MXL_АктСписанияОСГруппаБюдж_2016</name>
+  <synonym>
+    <key>ru</key>
+    <value>Акт списания группы основных средств</value>
+  </synonym>
+  <synonym>
+    <key>uk</key>
+    <value>Акт списання групи основних засобів</value>
+  </synonym>
+</mdclass:CommonTemplate>

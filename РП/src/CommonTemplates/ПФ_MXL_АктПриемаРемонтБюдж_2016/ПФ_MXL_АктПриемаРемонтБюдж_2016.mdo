@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonTemplate xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="531edda7-d655-4bb7-934a-754d9f60fa28">
+  <name>ПФ_MXL_АктПриемаРемонтБюдж_2016</name>
+  <synonym>
+    <key>ru</key>
+    <value>Акт приема отремонтированных, реконструированных и модернизированных основных средств</value>
+  </synonym>
+  <synonym>
+    <key>uk</key>
+    <value>Акт приймання відремонтованих, реконструйованих та модернізованих основних засобів</value>
+  </synonym>
+</mdclass:CommonTemplate>

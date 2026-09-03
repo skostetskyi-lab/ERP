@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonCommand xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="e4c03e09-8e0c-4791-8dd8-7082b7fe19d4">
+  <name>СтруктураПодчиненности</name>
+  <synonym>
+    <key>ru</key>
+    <value>Связанные документы</value>
+  </synonym>
+  <synonym>
+    <key>uk</key>
+    <value>Пов'язані документи</value>
+  </synonym>
+  <group>FormCommandBarImportant</group>
+  <commandParameterType>
+    <types>DocumentRef.ЛистокСообщенияДляВоенкомата</types>
+    <types>DocumentRef.ПодтверждениеОплатыЗаявленияРасчетаВФСС</types>
+    <types>DocumentRef.ЕдиновременноеПособиеЗаСчетФСС</types>
+    <types>DocumentRef.ИзменениеУсловийОплатыОтпускаПоУходуЗаРебенком</types>
+    <types>DocumentRef.ПризПодарок</types>
+    <types>DocumentRef.УдержаниеВСчетРасчетовПоПрочимОперациям</types>
+    <types>DocumentRef.ВедомостьНаВыплатуЗарплатыРаздатчиком</types>
+    <types>DocumentRef.ВыплатаБывшимСотрудникам</types>
+    <types>DocumentRef.КадровыйПеревод</types>
+    <types>DocumentRef.РасчетСпецстажаСотрудников</types>
+    <types>DocumentRef.ПодтверждениеВыплатЗаСчетФСС</types>
+    <types>DocumentRef.ПереносОтпуска</types>
+    <types>DocumentRef.РаботаСверхурочно</types>
+    <types>DocumentRef.УдержаниеПрофсоюзныхВзносов</types>
+    <types>DocumentRef.ПростойСотрудников</types>
+    <types>DocumentRef.ЗаявлениеРасчетВФСС</types>
+    <types>DocumentRef.ИзменениеГрафикаРаботыСписком</types>
+    <types>DocumentRef.РегистрацияПереработок</types>
+    <types>DocumentRef.РаботаВВыходныеИПраздничныеДни</types>
+    <types>DocumentRef.Совмещение</types>
+    <types>DocumentRef.Отпуск</types>
+    <types>DocumentRef.ИзменениеКвалификационногоРазряда</types>
+    <types>DocumentRef.БольничныйЛист</types>
+    <types>DocumentRef.ДоговорАвторскогоЗаказа</types>
+    <types>DocumentRef.ОплатаПоСреднемуЗаработку</types>
+    <types>DocumentRef.Премия</types>
+    <types>DocumentRef.ОтменаДоплатыДоСреднегоЗаработка</types>
+    <types>DocumentRef.ИсполнительныйЛист</types>
+    <types>DocumentRef.ДоговорЗаймаСотруднику</types>
+    <types>DocumentRef.ИзменениеУсловийДоговораЗаймаСотруднику</types>
+    <types>DocumentRef.ВедомостьНаВыплатуЗарплатыПеречислением</types>
+    <types>DocumentRef.НачислениеЗарплаты</types>
+    <types>DocumentRef.РазовоеНачисление</types>
+    <types>DocumentRef.Увольнение</types>
+    <types>DocumentRef.ПереводКДругомуРаботодателю</types>
+    <types>DocumentRef.ПеремещениеВДругоеПодразделение</types>
+    <types>DocumentRef.НачислениеЗаПервуюПоловинуМесяца</types>
+    <types>DocumentRef.АктПриемкиВыполненныхРаботОказанныхУслуг</types>
+    <types>DocumentRef.ВедомостьНаВыплатуЗарплатыВБанк</types>
+    <types>DocumentRef.НазначениеПодработки</types>
+    <types>DocumentRef.ОтпускБезСохраненияОплаты</types>
+    <types>DocumentRef.ВозвратИзОтпускаПоУходуЗаРебенком</types>
+    <types>DocumentRef.ПрогулНеявка</types>
+    <types>DocumentRef.ДоходВНатуральнойФорме</types>
+    <types>DocumentRef.ДоговорРаботыУслуги</types>
+    <types>DocumentRef.ПриказНаДоплатуДоСреднегоЗаработка</types>
+    <types>DocumentRef.КомандировкиСотрудников</types>
+    <types>DocumentRef.КадровыйПереводСписком</types>
+    <types>DocumentRef.ПрекращениеПодработки</types>
+    <types>DocumentRef.ДепонированиеЗарплаты</types>
+    <types>DocumentRef.ПриемНаРаботу</types>
+    <types>DocumentRef.Командировка</types>
+    <types>DocumentRef.ПостоянноеУдержаниеВПользуТретьихЛиц</types>
+    <types>DocumentRef.УвольнениеСписком</types>
+    <types>DocumentRef.МатериальнаяПомощь</types>
+    <types>DocumentRef.ГрафикОтпусков</types>
+    <types>DocumentRef.ИзменениеУсловийИсполнительногоЛиста</types>
+    <types>DocumentRef.КомпенсацияЗаЗадержкуЗарплаты</types>
+    <types>DocumentRef.ОтпускаСотрудников</types>
+    <types>DocumentRef.АттестацияРабочихМестДляУчетаСпецстажа</types>
+    <types>DocumentRef.ОтменаСовмещения</types>
+    <types>DocumentRef.Отгул</types>
+    <types>DocumentRef.ОтпускПоУходуЗаРебенком</types>
+    <types>DocumentRef.ВедомостьНаВыплатуЗарплатыВКассу</types>
+    <types>DocumentRef.ПриемНаРаботуСписком</types>
+    <types>DocumentRef.ПродлениеКонтрактаДоговора</types>
+  </commandParameterType>
+  <representation>Auto</representation>
+  <toolTip>
+    <key>ru</key>
+    <value>Структура подчиненности</value>
+  </toolTip>
+  <toolTip>
+    <key>uk</key>
+    <value>Структура підпорядкованості</value>
+  </toolTip>
+  <picture xsi:type="core:PictureRef">
+    <picture>CommonPicture.СтруктураПодчиненности</picture>
+  </picture>
+</mdclass:CommonCommand>

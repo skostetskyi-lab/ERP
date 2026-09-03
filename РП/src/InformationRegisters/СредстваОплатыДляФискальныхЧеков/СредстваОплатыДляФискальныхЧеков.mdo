@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="9e597193-2d69-4979-8573-f9359b7e0552">
+  <producedTypes>
+    <selectionType typeId="4f036d14-0cda-4621-812d-710ba1f0c1b7" valueTypeId="af8ee411-3498-4d9d-b6a8-5699a3c6b456"/>
+    <listType typeId="c506c846-5246-498e-9f29-0e82a1276f88" valueTypeId="d8b33262-f8e4-4a2d-94d6-f9e1a4b710ab"/>
+    <managerType typeId="ec0de5fa-be73-4f6e-ba41-fabe78e58d07" valueTypeId="5394ff43-b918-4980-9013-a701fe255701"/>
+    <recordSetType typeId="926bf692-2d13-41f4-84d7-221d46025ae6" valueTypeId="385d1017-edad-4946-85a0-7173abd18593"/>
+    <recordKeyType typeId="6cbc353b-b7a0-4046-8541-5f4d6b1353d2" valueTypeId="9ead79ec-db1b-4b23-8cea-8b2ad875acfa"/>
+    <recordType typeId="88abbea5-cd95-4c10-b258-0200de713db8" valueTypeId="67084971-2f8c-4b69-b9ff-e516ff20a1bf"/>
+    <recordManagerType typeId="c2d54338-7c47-4f62-8749-6059be4587fe" valueTypeId="65206d9e-e01d-47e2-80c6-af70dd1672ab"/>
+  </producedTypes>
+  <name>СредстваОплатыДляФискальныхЧеков</name>
+  <synonym>
+    <key>ru</key>
+    <value>Средства оплаты для фискальных чеков</value>
+  </synonym>
+  <synonym>
+    <key>uk</key>
+    <value>Засоби оплати для фіскальних чеків</value>
+  </synonym>
+  <editType>InDialog</editType>
+  <defaultRecordForm>InformationRegister.СредстваОплатыДляФискальныхЧеков.Form.ФормаЗаписи</defaultRecordForm>
+  <defaultListForm>InformationRegister.СредстваОплатыДляФискальныхЧеков.Form.ФормаСписка</defaultListForm>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="6b94650d-2861-4a35-ac2e-d330144c7590">
+    <name>Название</name>
+    <synonym>
+      <key>ru</key>
+      <value>Название</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Назва</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>100</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue"/>
+  </resources>
+  <resources uuid="1957b34e-ea6e-46ed-8abb-85c474b41aa3">
+    <name>Код</name>
+    <synonym>
+      <key>ru</key>
+      <value>Код</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Код</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="c2390695-dd6b-411a-abb5-a35f0e25f82c">
+    <name>СредствоОплаты</name>
+    <synonym>
+      <key>ru</key>
+      <value>Средство оплаты</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Засіб оплати</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ЭквайринговыеТерминалы</types>
+      <types>CatalogRef.ВидыПодарочныхСертификатов</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="a5dfbc28-7df5-45a7-836d-eb566d2e7b0f">
+    <name>ФормаЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма записи</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма запису</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="bec87ddf-596d-4bb0-ac08-b792a850360e">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма списку</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

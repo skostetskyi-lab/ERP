@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonTemplate xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="b7adb9dd-6af1-4e72-a223-5b713d7826d6">
+  <name>ПФ_MXL_АктВводаОСБюдж_2016</name>
+  <synonym>
+    <key>ru</key>
+    <value>Акт ввода в эксплуатацию основных средств</value>
+  </synonym>
+  <synonym>
+    <key>uk</key>
+    <value>Акт введення в експлуатацію основних засобів</value>
+  </synonym>
+</mdclass:CommonTemplate>

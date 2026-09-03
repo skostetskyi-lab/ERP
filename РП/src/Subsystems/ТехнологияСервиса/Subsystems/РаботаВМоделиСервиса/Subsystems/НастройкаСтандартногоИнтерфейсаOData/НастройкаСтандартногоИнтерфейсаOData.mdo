@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="31457f28-be4f-4d50-92bb-bcabd9f26f2e">
+  <name>НастройкаСтандартногоИнтерфейсаOData</name>
+  <synonym>
+    <key>ru</key>
+    <value>Настройка состава стандартного интерфейса OData</value>
+  </synonym>
+  <synonym>
+    <key>uk</key>
+    <value>Настройка складу стандартного інтерфейсу OData</value>
+  </synonym>
+  <content>Role.УдаленныйДоступСтандартныйИнтерфейсOData</content>
+  <content>DataProcessor.НастройкаСтандартногоИнтерфейсаOData</content>
+  <content>Constant.ПользовательСтандартногоИнтерфейсаOData</content>
+  <parentSubsystem>Subsystem.ТехнологияСервиса.Subsystem.РаботаВМоделиСервиса</parentSubsystem>
+</mdclass:Subsystem>
